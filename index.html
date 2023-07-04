@@ -45,7 +45,7 @@
     <!-- Navbar goes here -->
     <nav class="bg-transparent border-gray-200">
       <div
-        class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5"
+        class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5 px-5"
       >
         <a
           href="/"
@@ -119,28 +119,31 @@
     </nav>
 
     <!-- Hero goes here -->
-    <section class="w-full min-h-[90vh]">
+    <section class="w-full min-h-[50vh] md:min-h-[90vh]">
       <div
-        class="w-full h-[90vh] text-center relative flex flex-col justify-center overflow-x-hidden"
+        class="w-full h-[50vh] md:h-[90vh] text-center relative flex flex-col justify-center overflow-x-hidden"
       >
         <div
           class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] relative flex flex-col text-center"
         >
           <h1
-            class="font-inter font-thin text-white xl:text-[110px] 2xl:text-[135px] leading-[5px]"
+            class="font-inter font-thin text-white text-[34px] xl:text-[110px] 2xl:text-[135px] leading-[15px] drop-shadow-xl shadow-white"
           >
             We are a Social Media
           </h1>
           <h1
-            class="text-bg font-outfit font-black xl:text-[160px] 2xl:text-[190px] text-transparent bg-clip-text bg-[length:120%_120%] bg-[url('https://images.unsplash.com/photo-1561211919-1947abbbb35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80')]"
+            class="text-bg font-outfit font-black text-5xl xl:text-[160px] 2xl:text-[190px] leading-normal text-transparent bg-clip-text bg-[length:120%_120%] bg-[url('https://images.unsplash.com/photo-1561211919-1947abbbb35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80')] relative overflow-visible"
           >
             Digital Agency
+            <div
+              class="absolute w-[100%] h-[100%] bg-blue-500 z-[-1] bottom-0 rounded-full blur-3xl opacity-[0.1]"
+            ></div>
           </h1>
 
           <img
             src="./src/assets/images/logo-3d-transparent.png"
             alt="logo-transparent"
-            class="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[-1] opacity-30 xl:w-[30vw]"
+            class="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[-1] opacity-30 w-56 xl:w-[30vw]"
           />
         </div>
         <div class="absolute bottom-[30px]">
@@ -182,11 +185,13 @@
     <div
       class="w-full my-24 lg:max-w-[1150px] 2xl:max-w-[1366px] mx-auto"
     >
-      <div class="about-first w-full grid grid-cols-2 gap-[48px]">
+      <div
+        class="about-first w-full grid m:grid-cols-2 grid-cols-1 gap-[48px]"
+      >
         <div class="w-full flex gap-3 justify-around">
           <div class="flex flex-col gap-2 items-center">
             <h1
-              class="font-outfit font-bold text-8xl text-transparent bg-clip-text bg-gradient-radial from-[#00B0FF] to-[#070C0F]"
+              class="font-outfit font-bold text-5xl xl:text-8xl text-transparent bg-clip-text bg-gradient-radial from-[#00B0FF] to-[#070C0F]"
             >
               50+
             </h1>
@@ -198,7 +203,7 @@
           </div>
           <div class="flex flex-col gap-2 items-center">
             <h1
-              class="font-outfit font-bold text-8xl text-transparent bg-clip-text bg-gradient-radial from-[#00B0FF] to-[#070C0F]"
+              class="font-outfit font-bold text-5xl xl:text-8xl text-transparent bg-clip-text bg-gradient-radial from-[#00B0FF] to-[#070C0F]"
             >
               2020
             </h1>
@@ -209,8 +214,10 @@
             </h3>
           </div>
         </div>
-        <div class="w-full flex items-center">
-          <p class="font-inter text-white font-light text-2xl">
+        <div class="w-full flex items-center px-5 md:px-0">
+          <p
+            class="font-inter text-white font-light text-2xl text-center md:text-left"
+          >
             Lorem ipsum dolor sit amet consectetur. Id risus auctor
             malesuada natoque arcu elementum at nibh hac.
           </p>
@@ -220,22 +227,25 @@
 
     <!-- About 2 goes here -->
     <div
-      class="w-full mx-auto container bg-[#070C0F] rellax mb-48"
-      data-rellax-speed="10"
+      class="w-full mx-auto container bg-[#070C0F] rellax mb-[650px] xl:mb-48"
+      data-rellax-xs-speed="3"
+      data-rellax-mobile-speed="3"
       data-rellax-desktop-speed="10"
     >
-      <div class="px-60 w-full relative">
+      <div class="px-5 xl:px-60 w-full relative">
         <div class="w-full pt-12 relative">
           <h1
-            class="uppercase font-outfit font-semibold text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] mb-8 rellax z-[3]"
+            class="uppercase font-outfit font-semibold text-5xl xl:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] mt-16 mb-0 xl:mb-8 rellax z-[3]"
             data-rellax-speed="2.5"
+            data-rellax-mobile-speed="-3"
             data-rellax-desktop-speed="-1"
           >
             About Us
           </h1>
           <p
-            class="w-[100%] font-inter text-4xl font-medium text-[#A7A7A7] leading-[1.5] mb-24 rellax z-[-1] absolute top-[200px]"
+            class="w-[100%] font-inter text-3xl xl:text-4xl font-medium text-[#A7A7A7] leading-[1.5] mt-[20px] xl:mt-0 mb-24 rellax z-[-1] absolute top-[220px]"
             data-rellax-speed="3"
+            data-rellax-mobile-speed="-8"
             data-rellax-desktop-speed="-3"
           >
             Lorem ipsum
@@ -252,26 +262,30 @@
             >
           </p>
           <div
-            class="flex items-center gap-3 rellax absolute bottom-[-350px]"
+            class="flex items-center gap-3 rellax absolute bottom-[-450px] xl:bottom-[-350px]"
             data-rellax-speed="1"
+            data-rellax-mobile-speed="3"
             data-rellax-desktop-speed="1"
           >
             <h3
-              class="font-inter text-white font-medium text-4xl transition duration-300 hover:text-[#00B0FF]"
+              class="font-inter text-white font-medium text-3xl xl:text-4xl transition duration-300 hover:text-[#00B0FF]"
             >
               See our products
             </h3>
             <img
               src="./src/assets/icons/arrow-right.svg"
               alt="arrow-right"
-              width="30px"
+              class="w-[24px] xl:w-[30px]"
             />
           </div>
         </div>
-        <div class="absolute top-[-50px] left-[120px] z-[-1]">
+        <div
+          class="absolute top-[150px] xl:top-[-50px] left-[20px] xl:left-[120px] z-[-1]"
+        >
           <div
-            class="relative w-full overflow-hidden h-[320px] 2xl:h-[380px] rellax"
+            class="relative w-full overflow-hidden h-[175px] xl:h-[320px] 2xl:h-[380px] rellax"
             data-rellax-speed="6"
+            data-rellax-mobile-speed="5"
             data-rellax-desktop-speed="10"
           >
             <div
@@ -285,11 +299,12 @@
           </div>
         </div>
         <div
-          class="absolute bottom-[-300px] 2xl:bottom-[-350px] right-[120px] z-[-3]"
+          class="absolute bottom-[-350px] xl:bottom-[-300px] 2xl:bottom-[-350px] right-[20px] xl:right-[120px] z-[-3]"
         >
           <div
-            class="relative w-full overflow-hidden h-[250px] 2xl:h-[300px] rellax"
+            class="relative w-full overflow-hidden h-[125px] xl:h-[250px] 2xl:h-[300px] rellax"
             data-rellax-speed="6"
+            data-rellax-mobile-speed="10"
             data-rellax-desktop-speed="10"
           >
             <div
@@ -307,7 +322,8 @@
 
     <!-- About 3 goes here -->
     <div
-      class="w-full lg:max-w-[1150px] 2xl:max-w-[1366px] mx-auto rellax mt-[-100px]"
+      class="w-full lg:max-w-[1150px] 2xl:max-w-[1366px] mx-auto rellax mt-0 xl:mt-[-100px] px-5 xl:px-0 mb-60 xl:mb-0"
+      data-rellax-mobile-speed="10"
       data-rellax-desktop-speed="10"
     >
       <h3
@@ -316,14 +332,16 @@
         Why do you need to choose us?
       </h3>
       <div
-        class="why-us w-full border-t-2 border-[#3F3F3F] flex items-center py-16"
+        class="why-us w-full border-t-2 border-[#3F3F3F] flex flex-col xl:flex-row items-center py-16 gap-7 xl:gap-0"
       >
-        <div class="w-[45%] flex items-center">
-          <h1 class="font-outfit font-bold text-white text-6xl">
+        <div class="w-full xl:w-[45%] block xl:flex items-center">
+          <h1
+            class="font-outfit font-bold text-white text-5xl xl:text-6xl"
+          >
             Longevity
           </h1>
         </div>
-        <div class="w-[55%] flex items-center">
+        <div class="w-full xl:w-[55%] flex items-center">
           <p class="font-inter font-normal text-[#A7A7A7] text-2xl">
             Lorem ipsum dolor sit amet consectetur. Lacinia nulla
             lectus in ornare orci. Pulvinar ligula tristique
@@ -332,14 +350,16 @@
         </div>
       </div>
       <div
-        class="why-us w-full border-t-2 border-[#3F3F3F] flex items-center py-16"
+        class="why-us w-full border-t-2 border-[#3F3F3F] flex flex-col xl:flex-row items-center py-16 gap-7 xl:gap-0"
       >
-        <div class="w-[45%] flex items-center">
-          <h1 class="font-outfit font-bold text-white text-6xl">
-            Partnership &<br />Collaboration
-          </h1>
+        <div class="w-full xl:w-[45%] block xl:flex items-center">
+          <p
+            class="font-outfit font-bold text-white text-5xl xl:text-6xl"
+          >
+            Partnership & Collaboration
+          </p>
         </div>
-        <div class="w-[55%] flex items-center">
+        <div class="w-full xl:w-[55%] flex items-center">
           <p class="font-inter font-normal text-[#A7A7A7] text-2xl">
             Lorem ipsum dolor sit amet consectetur. Lacinia nulla
             lectus in ornare orci. Pulvinar ligula tristique
@@ -348,14 +368,16 @@
         </div>
       </div>
       <div
-        class="why-us w-full border-t-2 border-b-2 border-[#3F3F3F] flex items-center py-16"
+        class="why-us w-full border-t-2 border-b-2 border-[#3F3F3F] flex flex-col xl:flex-row items-center py-16 gap-7 xl:gap-0"
       >
-        <div class="w-[45%] flex items-center">
-          <h1 class="font-outfit font-bold text-white text-6xl">
+        <div class="w-full xl:w-[45%] block xl:flex items-center">
+          <h1
+            class="font-outfit font-bold text-white text-5xl xl:text-6xl"
+          >
             Longevity
           </h1>
         </div>
-        <div class="w-[55%] flex items-center">
+        <div class="w-full xl:w-[55%] flex items-center">
           <p class="font-inter font-normal text-[#A7A7A7] text-2xl">
             Lorem ipsum dolor sit amet consectetur. Lacinia nulla
             lectus in ornare orci. Pulvinar ligula tristique
@@ -368,7 +390,7 @@
     <!-- Start a project -->
     <section class="w-full text-center mb-40">
       <h1
-        class="font-outfit font-bold text-8xl text-transparent bg-clip-text bg-gradient-to-b from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] drop-shadow-lg bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-300 leading-tight"
+        class="font-outfit font-bold text-6xl xl:text-8xl text-transparent bg-clip-text bg-gradient-to-b from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] drop-shadow-lg bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-300 leading-tight"
       >
         Start<br />a<br />Project
       </h1>
@@ -376,7 +398,9 @@
 
     <!-- Footer goes here -->
     <footer class="w-full">
-      <div class="w-full mx-auto container grid grid-cols-2">
+      <div
+        class="w-full mx-auto container grid grid-cols-1 xl:grid-cols-2"
+      >
         <div
           class="flex flex-col justify-start items-center text-center gap-5 py-20"
         >
@@ -385,10 +409,14 @@
           >
             Contact Us
           </h3>
-          <h4 class="font-inter font-medium text-xl text-white">
+          <h4
+            class="font-inter font-medium text-lg xl:text-xl text-white"
+          >
             gambitrojo@gmail.com
           </h4>
-          <h4 class="font-inter font-medium text-xl text-white">
+          <h4
+            class="font-inter font-medium text-lg xl:text-xl text-white"
+          >
             +62 812 3456789
           </h4>
         </div>
@@ -405,21 +433,21 @@
               <img
                 src="./src/assets/icons/instagram.svg"
                 alt="instagram"
-                width="40px"
+                class="w-[33px] xl:w-[40px]"
               />
             </a>
             <a href="#" class="cursor-none">
               <img
                 src="./src/assets/icons/linkedin.svg"
                 alt="linkedin"
-                width="32px"
+                class="w-[28px] xl:w-[40px]"
               />
             </a>
             <a href="#" class="cursor-none">
               <img
                 src="./src/assets/icons/tiktok.svg"
                 alt="tiktok"
-                width="32px"
+                class="w-[28px] xl:w-[40px]"
               />
             </a>
           </div>
