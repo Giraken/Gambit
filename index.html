@@ -35,151 +35,158 @@
     <!-- Custom cursor -->
     <div
       id="cursor1"
-      class="fixed w-[14px] h-[14px] bg-[#B5FBFF] rounded-full translate-x-[-50%] translate-y-[-50%] pointer-events-none z-50"
+      class="hidden xl:block fixed w-[14px] h-[14px] bg-[#B5FBFF] rounded-full translate-x-[-50%] translate-y-[-50%] pointer-events-none z-50"
     ></div>
     <div
       id="cursor2"
-      class="fixed w-[52px] h-[52px] border-[#258287] border rounded-full translate-x-[-50%] translate-y-[-50%] duration-700 ease-out bg-transparent z-50 pointer-events-none"
+      class="hidden xl:block fixed w-[52px] h-[52px] border-[#258287] border rounded-full translate-x-[-50%] translate-y-[-50%] duration-700 ease-out bg-transparent z-50 pointer-events-none"
     ></div>
 
-    <!-- Navbar goes here -->
-    <nav class="bg-transparent border-gray-200">
+    <div class="relative w-full">
       <div
-        class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5 px-5"
-      >
-        <a
-          href="/"
-          class="flex items-center font-outfit font-bold text-3xl cursor-none"
-        >
-          <h1 class="text-[#00B0FF]">
-            Gambit<span class="text-white">Rojo</span>
-          </h1>
-        </a>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-6 h-6"
-            aria-hidden="true"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-        <div
-          class="hidden w-full md:block md:w-auto"
-          id="navbar-default"
-        >
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 uppercase tracking-widest text-xl"
-          >
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 font-normal cursor-none"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 font-normal cursor-none"
-                >Expertise</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 font-normal cursor-none"
-                >Insight</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 font-normal cursor-none"
-                >About You</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero goes here -->
-    <section class="w-full min-h-[50vh] md:min-h-[90vh]">
+        class="absolute w-[300px] h-[300px] xl:w-[500px] 2xl:w-[700px] 2xl:h-[700px] xl:h-[500px] bg-blue-600 z-[-1] top-[50%] left-[40%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[156px] opacity-[0.6]"
+      ></div>
       <div
-        class="w-full h-[50vh] md:h-[90vh] text-center relative flex flex-col justify-center overflow-x-hidden"
-      >
+        class="absolute w-[200px] h-[200px] xl:w-[300px] 2xl:w-[400px] 2xl:h-[400px] xl:h-[300px] bg-teal-400 z-[-1] top-[50%] left-[65%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[128px] opacity-[0.6]"
+      ></div>
+      <!-- Navbar goes here -->
+      <nav class="bg-transparent border-gray-200">
         <div
-          class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] relative flex flex-col text-center"
+          class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5 px-5"
         >
-          <h1
-            class="font-inter font-thin text-white text-[34px] xl:text-[110px] 2xl:text-[135px] leading-[15px] drop-shadow-xl shadow-white"
+          <a
+            href="/"
+            class="flex items-center font-outfit font-bold text-3xl cursor-none"
           >
-            We are a Social Media
-          </h1>
-          <h1
-            class="text-bg font-outfit font-black text-5xl xl:text-[160px] 2xl:text-[190px] leading-normal text-transparent bg-clip-text bg-[length:120%_120%] bg-[url('https://images.unsplash.com/photo-1561211919-1947abbbb35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80')] relative overflow-visible"
+            <h1 class="text-[#00B0FF]">
+              Gambit<span class="text-white">Rojo</span>
+            </h1>
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-default"
+            aria-expanded="false"
           >
-            Digital Agency
-            <div
-              class="absolute w-[100%] h-[100%] bg-blue-500 z-[-1] bottom-0 rounded-full blur-3xl opacity-[0.1]"
-            ></div>
-          </h1>
-
-          <img
-            src="./src/assets/images/logo-3d-transparent.png"
-            alt="logo-transparent"
-            class="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[-1] opacity-30 w-56 xl:w-[30vw]"
-          />
-        </div>
-        <div class="absolute bottom-[30px]">
-          <div class="relative flex overflow-x-hidden">
-            <div class="animate-marquee whitespace-nowrap z-0">
-              <p
-                class="font-inter font-light text-white xl:text-[2vw]"
-              >
-                Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit. Suscipit blanditiis nesciunt dolorum iure nam
-                voluptatum nulla vel corporis earum error, optio
-                dolores. Impedit ipsam placeat, quia, illo expedita
-                ducimus ex minima sint quod beatae doloribus. Nostrum
-                dicta animi dolores odit nemo aperiam quidem alias
-                corrupti aliquid iste, asperiores quaerat accusamus!
-              </p>
-            </div>
-            <div
-              class="absolute top-0 animate-marquee2 whitespace-nowrap z-0"
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <p
-                class="font-inter font-light text-white xl:text-[2vw]"
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="hidden w-full md:block md:w-auto"
+            id="navbar-default"
+          >
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 uppercase tracking-widest text-xl"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 font-normal cursor-none"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 font-normal cursor-none"
+                  >Expertise</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 font-normal cursor-none"
+                  >Insight</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 font-normal cursor-none"
+                  >About You</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero goes here -->
+      <section class="w-full min-h-[50vh] md:min-h-[90vh]">
+        <div
+          class="w-full h-[50vh] md:h-[90vh] text-center relative flex flex-col justify-center overflow-x-hidden"
+        >
+          <div
+            class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] relative flex flex-col text-center"
+          >
+            <h1
+              class="font-inter font-thin text-white text-[34px] sm:text-[68px] xl:text-[110px] 2xl:text-[135px] leading-[15px] drop-shadow-xl shadow-white"
+            >
+              We are a Social Media
+            </h1>
+            <h1
+              class="text-bg font-outfit font-black text-5xl sm:text-[96px] xl:text-[160px] 2xl:text-[190px] leading-normal text-transparent bg-clip-text bg-[length:120%_120%] bg-[url('https://images.unsplash.com/photo-1561211919-1947abbbb35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80')] relative overflow-visible drop-shadow-lg"
+            >
+              Digital Agency
+            </h1>
+
+            <img
+              src="./src/assets/images/logo-3d-transparent.png"
+              alt="logo-transparent"
+              class="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[-1] opacity-[0.2] w-56 xl:w-[30vw]"
+            />
+          </div>
+          <div class="absolute bottom-[30px]">
+            <div class="relative flex overflow-x-hidden">
+              <div class="animate-marquee whitespace-nowrap z-0">
+                <p
+                  class="font-inter font-light text-white text-lg xl:text-[2vw]"
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Suscipit blanditiis nesciunt dolorum iure nam
+                  voluptatum nulla vel corporis earum error, optio
+                  dolores. Impedit ipsam placeat, quia, illo expedita
+                  ducimus ex minima sint quod beatae doloribus.
+                  Nostrum dicta animi dolores odit nemo aperiam quidem
+                  alias corrupti aliquid iste, asperiores quaerat
+                  accusamus!
+                </p>
+              </div>
+              <div
+                class="absolute top-0 animate-marquee2 whitespace-nowrap z-0"
               >
-                Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit. Suscipit blanditiis nesciunt dolorum iure nam
-                voluptatum nulla vel corporis earum error, optio
-                dolores. Impedit ipsam placeat, quia, illo expedita
-                ducimus ex minima sint quod beatae doloribus. Nostrum
-                dicta animi dolores odit nemo aperiam quidem alias
-                corrupti aliquid iste, asperiores quaerat accusamus!
-              </p>
+                <p
+                  class="font-inter font-light text-white text-lg xl:text-[2vw]"
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing
+                  elit. Suscipit blanditiis nesciunt dolorum iure nam
+                  voluptatum nulla vel corporis earum error, optio
+                  dolores. Impedit ipsam placeat, quia, illo expedita
+                  ducimus ex minima sint quod beatae doloribus.
+                  Nostrum dicta animi dolores odit nemo aperiam quidem
+                  alias corrupti aliquid iste, asperiores quaerat
+                  accusamus!
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- About 1 goes here -->
     <div
@@ -226,100 +233,107 @@
     </div>
 
     <!-- About 2 goes here -->
-    <div
-      class="w-full mx-auto container bg-[#070C0F] rellax mb-[650px] xl:mb-48"
-      data-rellax-xs-speed="3"
-      data-rellax-mobile-speed="3"
-      data-rellax-desktop-speed="10"
-    >
-      <div class="px-5 xl:px-60 w-full relative">
-        <div class="w-full pt-12 relative">
-          <h1
-            class="uppercase font-outfit font-semibold text-5xl xl:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] mt-16 mb-0 xl:mb-8 rellax z-[3]"
-            data-rellax-speed="2.5"
-            data-rellax-mobile-speed="-3"
-            data-rellax-desktop-speed="-1"
-          >
-            About Us
-          </h1>
-          <p
-            class="w-[100%] font-inter text-3xl xl:text-4xl font-medium text-[#A7A7A7] leading-[1.5] mt-[20px] xl:mt-0 mb-24 rellax z-[-1] absolute top-[220px]"
-            data-rellax-speed="3"
-            data-rellax-mobile-speed="-8"
-            data-rellax-desktop-speed="-3"
-          >
-            Lorem ipsum
-            <span class="about-unique text-white relative"
-              >dolor sit
-            </span>
-            amet consectetur. Lacinia nulla lectus in
-            <span class="about-unique text-white relative"
-              >ornare orci.</span
-            >
-            Pulvinar ligula tristique pellentesque
-            <span class="about-unique text-white relative"
-              >fermentum au.</span
-            >
-          </p>
-          <div
-            class="flex items-center gap-3 rellax absolute bottom-[-450px] xl:bottom-[-350px]"
-            data-rellax-speed="1"
-            data-rellax-mobile-speed="3"
-            data-rellax-desktop-speed="1"
-          >
-            <h3
-              class="font-inter text-white font-medium text-3xl xl:text-4xl transition duration-300 hover:text-[#00B0FF]"
-            >
-              See our products
-            </h3>
-            <img
-              src="./src/assets/icons/arrow-right.svg"
-              alt="arrow-right"
-              class="w-[24px] xl:w-[30px]"
-            />
-          </div>
-        </div>
+    <div class="relative overflow-visible">
+      <div
+        class="w-full mx-auto container bg-[#070C0F] rellax mb-[650px] xl:mb-48 relative"
+        data-rellax-xs-speed="3"
+        data-rellax-mobile-speed="3"
+        data-rellax-desktop-speed="10"
+      >
         <div
-          class="absolute top-[150px] xl:top-[-50px] left-[20px] xl:left-[120px] z-[-1]"
-        >
+          class="absolute w-[300px] h-[300px] xl:w-[500px] 2xl:w-[400px] 2xl:h-[400px] xl:h-[500px] bg-blue-600 z-[-1] top-[100%] left-0 sm:left-[25%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[156px] opacity-[1]"
+        ></div>
+        <div
+          class="absolute w-[250px] h-[250px] xl:w-[300px] 2xl:w-[300px] 2xl:h-[300px] xl:h-[300px] bg-teal-400 z-[-1] top-[350%] sm:top-[250%] right-[0%] -translate-y-[50%] rounded-full blur-[96px] opacity-[0.6]"
+        ></div>
+        <div class="px-5 xl:px-60 w-full relative">
+          <div class="w-full pt-12 relative">
+            <h1
+              class="uppercase font-outfit font-semibold text-5xl xl:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] mt-16 mb-0 xl:mb-8 rellax z-[3]"
+              data-rellax-speed="2.5"
+              data-rellax-mobile-speed="-3"
+              data-rellax-desktop-speed="-1"
+            >
+              About Us
+            </h1>
+            <p
+              class="w-[100%] font-inter text-3xl xl:text-4xl font-medium text-[#A7A7A7] leading-[1.5] mt-[20px] xl:mt-0 mb-24 rellax z-[-1] absolute top-[220px]"
+              data-rellax-speed="3"
+              data-rellax-mobile-speed="-8"
+              data-rellax-desktop-speed="-3"
+            >
+              Lorem ipsum
+              <span class="about-unique text-white relative"
+                >dolor sit
+              </span>
+              amet consectetur. Lacinia nulla lectus in
+              <span class="about-unique text-white relative"
+                >ornare orci.</span
+              >
+              Pulvinar ligula tristique pellentesque
+              <span class="about-unique text-white relative"
+                >fermentum au.</span
+              >
+            </p>
+            <div
+              class="flex items-center gap-3 rellax absolute bottom-[-450px] xl:bottom-[-350px]"
+              data-rellax-speed="1"
+              data-rellax-mobile-speed="3"
+              data-rellax-desktop-speed="1"
+            >
+              <h3
+                class="font-inter text-white font-medium text-3xl xl:text-4xl transition duration-300 hover:text-[#00B0FF]"
+              >
+                See our products
+              </h3>
+              <img
+                src="./src/assets/icons/arrow-right.svg"
+                alt="arrow-right"
+                class="w-[24px] xl:w-[30px]"
+              />
+            </div>
+          </div>
           <div
-            class="relative w-full overflow-hidden h-[175px] xl:h-[320px] 2xl:h-[380px] rellax"
-            data-rellax-speed="6"
-            data-rellax-mobile-speed="5"
-            data-rellax-desktop-speed="10"
+            class="absolute top-[150px] xl:top-[-50px] left-[20px] xl:left-[120px] z-[-1]"
           >
             <div
-              class="absolute top-0 left-0 right-0 bottom-0 bg-[#005982] opacity-50 hover:opacity-0 transition duration-300"
-            ></div>
-            <img
-              src="./src/assets/images/about.png"
-              alt="about"
-              class="w-full h-full object-cover object-center"
-            />
+              class="relative w-full overflow-hidden h-[175px] xl:h-[320px] 2xl:h-[380px] rellax"
+              data-rellax-speed="6"
+              data-rellax-mobile-speed="5"
+              data-rellax-desktop-speed="10"
+            >
+              <div
+                class="absolute top-0 left-0 right-0 bottom-0 bg-[#005982] opacity-50 hover:opacity-0 transition duration-300"
+              ></div>
+              <img
+                src="./src/assets/images/about.png"
+                alt="about"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
           </div>
-        </div>
-        <div
-          class="absolute bottom-[-350px] xl:bottom-[-300px] 2xl:bottom-[-350px] right-[20px] xl:right-[120px] z-[-3]"
-        >
           <div
-            class="relative w-full overflow-hidden h-[125px] xl:h-[250px] 2xl:h-[300px] rellax"
-            data-rellax-speed="6"
-            data-rellax-mobile-speed="10"
-            data-rellax-desktop-speed="10"
+            class="absolute bottom-[-350px] xl:bottom-[-300px] 2xl:bottom-[-350px] right-[20px] xl:right-[120px] z-[-3]"
           >
             <div
-              class="absolute top-0 left-0 right-0 bottom-0 bg-[#005982] opacity-50 hover:opacity-0 transition duration-300"
-            ></div>
-            <img
-              src="./src/assets/images/about-2.png"
-              alt="about"
-              class="w-full h-full object-cover object-center"
-            />
+              class="relative w-full overflow-hidden h-[125px] xl:h-[250px] 2xl:h-[300px] rellax"
+              data-rellax-speed="6"
+              data-rellax-mobile-speed="10"
+              data-rellax-desktop-speed="10"
+            >
+              <div
+                class="absolute top-0 left-0 right-0 bottom-0 bg-[#005982] opacity-50 hover:opacity-0 transition duration-300"
+              ></div>
+              <img
+                src="./src/assets/images/about-2.png"
+                alt="about"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
-
     <!-- About 3 goes here -->
     <div
       class="w-full lg:max-w-[1150px] 2xl:max-w-[1366px] mx-auto rellax mt-0 xl:mt-[-100px] px-5 xl:px-0 mb-60 xl:mb-0"

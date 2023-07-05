@@ -22,6 +22,7 @@
 body {
     background-color: #070C0F;
     cursor: none;
+    overflow-x: hidden;
     /* scroll-behavior: slow; */
 }
 
