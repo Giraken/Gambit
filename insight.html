@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/assets/icons/web-icon.svg"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Gambit Rojo</title>
+  </head>
+
+  <body>
+    <!-- Custom cursor -->
+    <div
+      id="cursor1"
+      class="fixed w-[14px] h-[14px] bg-[#B5FBFF] rounded-full translate-x-[-50%] translate-y-[-50%] pointer-events-none z-50"
+    ></div>
+    <div
+      id="cursor2"
+      class="fixed w-[52px] h-[52px] border-[#258287] border rounded-full translate-x-[-50%] translate-y-[-50%] duration-700 ease-out bg-transparent z-50 pointer-events-none"
+    ></div>
+
+    <!-- Navbar goes here -->
+    <nav class="bg-transparent border-gray-200">
+      <div
+        class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5"
+      >
+        <a
+          href="/"
+          class="flex items-center text-3xl font-bold font-outfit cursor-none"
+        >
+          <h1 class="text-[#00B0FF]">
+            Gambit<span class="text-white">Rojo</span>
+          </h1>
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="hidden w-full md:block md:w-auto"
+          id="navbar-default"
+        >
+          <ul
+            class="flex flex-col p-4 mt-4 text-xl font-medium tracking-widest uppercase border border-gray-100 rounded-lg md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 pl-3 pr-4 font-normal text-white bg-blue-700 rounded md:bg-transparent md:p-0 cursor-none"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 cursor-none"
+                >Expertise</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 cursor-none"
+                >Insight</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 cursor-none"
+                >About You</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero goes here -->
+    <section class= "w-full min-h-[90vh]">
+      <div class="py-24 sm:py-32">
+        <div class="px-6 mx-auto max-w-7xl lg:px-8">
+          <div class="max-w-3xl mx-auto lg:mx-0">
+            <h1 class="h-20 font-outfit font-medium text-7xl text-transparent bg-clip-text bg-gradient-radial from-[#00B0FF] to-[#070C0F]">Insight :</h1>
+            <h2 class="mt-2 text-4xl font-semibold leading-8 text-slate-200">up-to-date news, technology, resources, etc.</h2>
+          </div>
+          
+          <div class="border-t border-[#47ABD8] mt-10 p-4">
+            <ul class="flex p-4 mt-10 text-2xl text-white font-base md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0">
+              <li><a href="#">View All</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Website</a></li>
+              <li><a href="#">Management</a></li>
+            </ul>
+          </div>
+
+          <div class="p-6">
+            <article class="flex flex-col items-start justify-between max-w-8xl">
+              <div class="flex-col grid-cols-1 p-5 columns-2">
+                <img class="" src="src/assets/images/dm.png" alt="">
+
+                <div class="relative group">
+                  <h3 class="h-20 text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF]">
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                      Digital Marketing
+                    </a>
+                  </h3>
+    
+                  <div class="flex items-center mb-9 gap-x-4">
+                    <p class="text-2xl text-[#A7A7A7]">John Doe</p>
+                    <time datetime="2020-03-16" class="text-2xl text-[#A7A7A7]">Mar 16, 2020</time>
+                  </div>
+                  
+                  <p class="mt-1 font-extralight text-2xl leading-6 text-[#FFFFFF] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, alias exercitationem? Nesciunt, maiores. Neque id voluptatem quasi, voluptatibus totam sed porro illo. Eaque fugiat recusandae fugit nobis odio quidem. Adipisci?</p>
+                </div>
+              </div>
+
+              
+            </article>
+          </div>
+          
+          <div class="grid max-w-2xl grid-cols-1 pt-10 mx-auto mt-3 gap-x-8 gap-y-16 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <article class="flex flex-col items-start justify-between max-w-xl">
+              <div class="relative group">
+                <img src="src/assets/images/dm.png" alt="">
+                <h3 class="h-12 text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF]">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Digital Marketing
+                  </a>
+                </h3>
+
+                <div class="flex items-center text-xs gap-x-4">
+                  <p class="text-base text-[#A7A7A7]">John Doe</p>
+                  <time datetime="2020-03-16" class="text-base text-[#A7A7A7]">Mar 16, 2020</time>
+                </div>
+                
+                <p class="mt-5 text-sm leading-6 text-[#FFFFFF] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, alias exercitationem? Nesciunt, maiores. Neque id voluptatem quasi, voluptatibus totam sed porro illo. Eaque fugiat recusandae fugit nobis odio quidem. Adipisci?</p>
+              </div>
+            </article>
+
+            <article class="flex flex-col items-start justify-between max-w-xl">
+              <div class="relative group">
+                <img src="src/assets/images/dm.png" alt="">
+                <h3 class="h-12 text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF]">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Digital Marketing
+                  </a>
+                </h3>
+
+                <div class="flex items-center text-xs gap-x-4">
+                  <p class="text-base text-[#A7A7A7]">John Doe</p>
+                  <time datetime="2020-03-16" class="text-base text-[#A7A7A7]">Mar 16, 2020</time>
+                </div>
+                
+                <p class="mt-5 text-sm leading-6 text-[#FFFFFF] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, alias exercitationem? Nesciunt, maiores. Neque id voluptatem quasi, voluptatibus totam sed porro illo. Eaque fugiat recusandae fugit nobis odio quidem. Adipisci?</p>
+              </div>
+            </article>
+
+            <article class="flex flex-col items-start justify-between max-w-xl">
+              <div class="relative group">
+                <img src="src/assets/images/dm.png" alt="">
+                <h3 class="h-12 text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF]">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Digital Marketing
+                  </a>
+                </h3>
+
+                <div class="flex items-center text-xs gap-x-4">
+                  <p class="text-base text-[#A7A7A7]">John Doe</p>
+                  <time datetime="2020-03-16" class="text-base text-[#A7A7A7]">Mar 16, 2020</time>
+                </div>
+                
+                <p class="mt-5 text-sm leading-6 text-[#FFFFFF] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, alias exercitationem? Nesciunt, maiores. Neque id voluptatem quasi, voluptatibus totam sed porro illo. Eaque fugiat recusandae fugit nobis odio quidem. Adipisci?</p>
+              </div>
+            </article>
+
+            <article class="flex flex-col items-start justify-between max-w-xl">
+              <div class="relative group">
+                <img src="src/assets/images/dm.png" alt="">
+                <h3 class="h-12 text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF]">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Digital Marketing
+                  </a>
+                </h3>
+
+                <div class="flex items-center text-xs gap-x-4">
+                  <p class="text-base text-[#A7A7A7]">John Doe</p>
+                  <time datetime="2020-03-16" class="text-base text-[#A7A7A7]">Mar 16, 2020</time>
+                </div>
+                
+                <p class="mt-5 text-sm leading-6 text-[#FFFFFF] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, alias exercitationem? Nesciunt, maiores. Neque id voluptatem quasi, voluptatibus totam sed porro illo. Eaque fugiat recusandae fugit nobis odio quidem. Adipisci?</p>
+              </div>
+            </article>
+
+            <article class="flex flex-col items-start justify-between max-w-xl">
+              <div class="relative group">
+                <img src="src/assets/images/dm.png" alt="">
+                <h3 class="h-12 text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF]">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Digital Marketing
+                  </a>
+                </h3>
+
+                <div class="flex items-center text-xs gap-x-4">
+                  <p class="text-base text-[#A7A7A7]">John Doe</p>
+                  <time datetime="2020-03-16" class="text-base text-[#A7A7A7]">Mar 16, 2020</time>
+                </div>
+                
+                <p class="mt-5 text-sm leading-6 text-[#FFFFFF] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, alias exercitationem? Nesciunt, maiores. Neque id voluptatem quasi, voluptatibus totam sed porro illo. Eaque fugiat recusandae fugit nobis odio quidem. Adipisci?</p>
+              </div>
+            </article>
+
+            <article class="flex flex-col items-start justify-between max-w-xl">
+              <div class="relative group">
+                <img src="src/assets/images/dm.png" alt="">
+                <h3 class="h-12 text-4xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF]">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Digital Marketing
+                  </a>
+                </h3>
+
+                <div class="flex items-center text-xs gap-x-4">
+                  <p class="text-base text-[#A7A7A7]">John Doe</p>
+                  <time datetime="2020-03-16" class="text-base text-[#A7A7A7]">Mar 16, 2020</time>
+                </div>
+                
+                <p class="mt-5 text-sm leading-6 text-[#FFFFFF] line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, alias exercitationem? Nesciunt, maiores. Neque id voluptatem quasi, voluptatibus totam sed porro illo. Eaque fugiat recusandae fugit nobis odio quidem. Adipisci?</p>
+              </div>
+            </article>
+      
+            <!-- More posts... -->
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- About 1 goes here -->
+
+    <!-- About 2 goes here -->
+    
+    <!-- About 3 goes here -->
+
+    <!-- Start a project -->
+    <section class="w-full mb-40 text-center">
+      <h1
+        class="font-outfit font-bold text-8xl text-transparent bg-clip-text bg-gradient-to-b from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] drop-shadow-lg bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-300 leading-tight"
+      >
+        Start<br />a<br />Project
+      </h1>
+    </section>
+
+    <!-- Footer goes here -->
+    <footer class="w-full">
+      <div class="container grid w-full grid-cols-2 mx-auto">
+        <div
+          class="flex flex-col items-center justify-start gap-5 py-20 text-center"
+        >
+          <h3
+            class="font-outfit font-semibold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF]"
+          >
+            Contact Us
+          </h3>
+          <h4 class="text-xl font-medium text-white font-inter">
+            gambitrojo@gmail.com
+          </h4>
+          <h4 class="text-xl font-medium text-white font-inter">
+            +62 812 3456789
+          </h4>
+        </div>
+        <div
+          class="flex flex-col items-center justify-start gap-5 py-20 text-center"
+        >
+          <h3
+            class="font-outfit font-semibold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF]"
+          >
+            Our Social Media
+          </h3>
+          <div class="flex items-center gap-10">
+            <a href="#" class="cursor-none">
+              <img
+                src="./src/assets/icons/instagram.svg"
+                alt="instagram"
+                width="40px"
+              />
+            </a>
+            <a href="#" class="cursor-none">
+              <img
+                src="./src/assets/icons/linkedin.svg"
+                alt="linkedin"
+                width="32px"
+              />
+            </a>
+            <a href="#" class="cursor-none">
+              <img
+                src="./src/assets/icons/tiktok.svg"
+                alt="tiktok"
+                width="32px"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-[#1D1D1D] text-center p-4">
+        <h4 class="text-[#A7A7A7] font-inter font-normal text-base">
+          @ 2023 Gambit Rojo All Right Reserved
+        </h4>
+      </div>
+    </footer>
+
+    <script src="./src/js/cursor1.js"></script>
+    <script src="./src/js/scrollreveal.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+    <script>
+      var rellax = new Rellax('.rellax', {
+        center: true,
+      });
+    </script>
+  </body>
+</html>
