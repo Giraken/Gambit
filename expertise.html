@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/assets/icons/web-icon.svg"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Expertise | Gambit Rojo</title>
+  </head>
+
+  <body>
+    <!-- Custom cursor -->
+    <div
+      id="cursor1"
+      class="hidden xl:block fixed w-[14px] h-[14px] bg-[#B5FBFF] rounded-full translate-x-[-50%] translate-y-[-50%] pointer-events-none z-50"
+    ></div>
+    <div
+      id="cursor2"
+      class="hidden xl:block fixed w-[52px] h-[52px] border-[#258287] border rounded-full translate-x-[-50%] translate-y-[-50%] duration-700 ease-out bg-transparent z-50 pointer-events-none"
+    ></div>
+
+    <div class="relative w-full">
+      <!-- <div
+        class="absolute w-[300px] h-[300px] xl:w-[500px] 2xl:w-[700px] 2xl:h-[700px] xl:h-[500px] bg-blue-600 z-[-1] top-[50%] left-[40%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[156px] opacity-[0.6]"
+      ></div>
+      <div
+        class="absolute w-[200px] h-[200px] xl:w-[300px] 2xl:w-[400px] 2xl:h-[400px] xl:h-[300px] bg-teal-400 z-[-1] top-[50%] left-[65%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[128px] opacity-[0.6]"
+      ></div> -->
+      <!-- Navbar goes here -->
+      <nav class="bg-transparent border-gray-200">
+        <div
+          class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5 px-5 xl:px-0"
+        >
+          <a
+            href="/"
+            class="flex items-center font-outfit font-bold text-3xl cursor-none"
+          >
+            <h1 class="text-[#00B0FF]">
+              Gambit<span class="text-white">Rojo</span>
+            </h1>
+          </a>
+          <button
+            data-color-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="hidden w-full md:block md:w-auto"
+            id="navbar-default"
+          >
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 uppercase tracking-widest text-xl"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 font-normal cursor-none"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 font-normal cursor-none"
+                  >Expertise</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 font-normal cursor-none"
+                  >Insight</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 font-normal cursor-none"
+                  >About You</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero goes here -->
+      <section class="w-full min-h-[50vh] md:min-h-[90vh] mb-40">
+        <div
+          class="w-full min-h-[100vh] text-center relative flex flex-col justify-center overflow-x-hidden"
+        >
+          <div
+            class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] relative grid grid-cols-3 text-center items-center mb-40"
+          >
+            <div class="col-span-2">
+              <h1
+                class="font-inter font-extralight text-white text-[34px] sm:text-[68px] xl:text-[64px] 2xl:text-[135px] drop-shadow-xl shadow-white text-left"
+              >
+                We Provide Services Upon Your
+                <span
+                  class="font-outfit font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF]"
+                  >Needs</span
+                >
+              </h1>
+            </div>
+            <div
+              class="w-full bg-transparent flex items-center justify-end"
+            >
+              <img
+                src="./src/assets/images/logo-3d-transparent.png"
+                alt="logo-transparent"
+                class="relative w-56 xl:w-[25vw]"
+              />
+            </div>
+          </div>
+          <div
+            class="w-full mx-auto flex justify-center lg:max-w-[1150px] 2xl:max-w-[1366px]"
+          >
+            <div class="w-[75%]">
+              <p
+                class="font-inter font-extralight text-white text-[22px] text-left"
+              >
+                Lorem ipsum dolor sit amet consectetur. Dictum lorem
+                egestas dui aliquam. Elementum nulla in eget massa
+                morbi eget. Fermentum suspendisse lorem volutpat nulla
+                id id dis tincidunt. Nam consequat leo nunc habitant
+                gravida posuere amet ultricies senectus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Accordion goes here -->
+    <div class="w-full mb-[200px]">
+      <div
+        class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px]"
+      >
+        <h1
+          class="text-center font-outfit font-semibold text-5xl xl:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] mt-16 mb-0 xl:mb-16"
+        >
+          Our Expertise
+        </h1>
+        <div class="w-full">
+          <div
+            id="accordion-color"
+            data-accordion="collapse"
+            data-active-classes="bg-transparent text-white shadow-lg shadow-[#005982] transition duration-300 ease-in-out scale-105"
+          >
+            <div
+              id="accordion-color-heading-1"
+              class="relative mb-10"
+            >
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left bg-transparent relative overflow-hidden py-7 cursor-none"
+                data-accordion-target="#accordion-color-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-color-body-1"
+              >
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-neutral-900 bg-opacity-70 z-0"
+                ></div>
+                <div
+                  class="absolute w-full h-full left-0 top-0 z-[-1] bg-[url('https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80')] bg-cover bg-center"
+                ></div>
+                <span
+                  class="font-semibold font-outfit text-3xl xl:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF] z-[1]"
+                  >Website Development</span
+                >
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              id="accordion-color-body-1"
+              class="hidden mb-[120px] w-full"
+              aria-labelledby="accordion-color-heading-1"
+            >
+              <div class="w-full">
+                <h3
+                  class="text-center font-outfit font-medium text-[30px] xl:text-[48px] text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] leading-normal mb-[40px]"
+                >
+                  Recent Project
+                </h3>
+                <div class="flex flex-col gap-[50px]">
+                  <div
+                    class="w-full grid grid-cols-3 gap-8 items-start"
+                  >
+                    <div class="w-full flex flex-col pt-10 gap-3">
+                      <h3
+                        class="text-white font-outfit font-medium text-4xl"
+                      >
+                        Andaka Rantara Consultindo
+                      </h3>
+                      <p
+                        class="text-[#CECECE] font-inter text-xl font-light"
+                      >
+                        Lorem ipsum dolor sit amet consectetur. Mauris
+                        diam vitae cursus sit luctus cursus.
+                      </p>
+                    </div>
+                    <div
+                      class="w-full col-span-2 relative group/item"
+                    >
+                      <div
+                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-50 group-hover/item:opacity-0 transition duration-300"
+                      ></div>
+                      <div
+                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-[1] group-hover/item:translate-y-6 transition duration-300 z-[-1] group-hover/item:blur-xl"
+                      ></div>
+                      <img
+                        src="./src/assets/images/andaka-rantara.png"
+                        alt="andaka-rantara"
+                        class="w-full"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="w-full grid grid-cols-3 gap-8 items-start"
+                  >
+                    <div
+                      class="w-full col-span-2 relative group/item"
+                    >
+                      <div
+                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-50 group-hover/item:opacity-0 transition duration-300"
+                      ></div>
+                      <div
+                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-[1] group-hover/item:translate-y-6 transition duration-300 z-[-1] group-hover/item:blur-xl"
+                      ></div>
+                      <img
+                        src="./src/assets/images/arielle-mitra.png"
+                        alt="arielle-mitra"
+                        class="w-full"
+                      />
+                    </div>
+                    <div class="w-full flex flex-col pt-10 gap-3">
+                      <h3
+                        class="text-white font-outfit font-medium text-4xl"
+                      >
+                        Arielle Mitra Consulting
+                      </h3>
+                      <p
+                        class="text-[#CECECE] font-inter text-xl font-light"
+                      >
+                        Lorem ipsum dolor sit amet consectetur. Mauris
+                        diam vitae cursus sit luctus cursus.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="accordion-color-heading-2"
+              class="relative mb-10"
+            >
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left bg-transparent relative overflow-hidden py-7 cursor-none"
+                data-accordion-target="#accordion-color-body-2"
+                aria-expanded="true"
+                aria-controls="accordion-color-body-2"
+              >
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-neutral-900 bg-opacity-70 z-0"
+                ></div>
+                <div
+                  class="absolute w-full h-full left-0 top-0 z-[-1] bg-[url('https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center"
+                ></div>
+                <span
+                  class="font-semibold font-outfit text-3xl xl:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF] z-[1]"
+                  >Digital Marketing</span
+                >
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              id="accordion-color-body-2"
+              class="hidden mb-[120px] w-full"
+              aria-labelledby="accordion-color-heading-2"
+            >
+              <div class="w-full">
+                <h3
+                  class="text-center font-outfit font-medium text-[30px] xl:text-[48px] text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] leading-normal mb-[40px]"
+                >
+                  Recent Project
+                </h3>
+                <div class="flex flex-col gap-[50px]">
+                  <div
+                    class="w-full grid grid-cols-3 gap-8 items-start"
+                  >
+                    <div class="w-full flex flex-col pt-10 gap-3">
+                      <h3
+                        class="text-white font-outfit font-medium text-4xl"
+                      >
+                        Andaka Rantara Consultindo
+                      </h3>
+                      <p
+                        class="text-[#CECECE] font-inter text-xl font-light"
+                      >
+                        Lorem ipsum dolor sit amet consectetur. Mauris
+                        diam vitae cursus sit luctus cursus.
+                      </p>
+                    </div>
+                    <div
+                      class="w-full col-span-2 relative group/item"
+                    >
+                      <div
+                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-50 group-hover/item:opacity-0 transition duration-300"
+                      ></div>
+                      <div
+                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-[1] group-hover/item:translate-y-6 transition duration-300 z-[-1] group-hover/item:blur-xl"
+                      ></div>
+                      <img
+                        src="./src/assets/images/andaka-rantara.png"
+                        alt="andaka-rantara"
+                        class="w-full"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="w-full grid grid-cols-3 gap-8 items-start"
+                  >
+                    <div
+                      class="w-full col-span-2 relative group/item"
+                    >
+                      <div
+                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-50 group-hover/item:opacity-0 transition duration-300"
+                      ></div>
+                      <div
+                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-[1] group-hover/item:translate-y-6 transition duration-300 z-[-1] group-hover/item:blur-xl"
+                      ></div>
+                      <img
+                        src="./src/assets/images/arielle-mitra.png"
+                        alt="arielle-mitra"
+                        class="w-full"
+                      />
+                    </div>
+                    <div class="w-full flex flex-col pt-10 gap-3">
+                      <h3
+                        class="text-white font-outfit font-medium text-4xl"
+                      >
+                        Arielle Mitra Consulting
+                      </h3>
+                      <p
+                        class="text-[#CECECE] font-inter text-xl font-light"
+                      >
+                        Lorem ipsum dolor sit amet consectetur. Mauris
+                        diam vitae cursus sit luctus cursus.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="accordion-color-heading-3"
+              class="relative mb-10"
+            >
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left bg-transparent relative overflow-hidden py-7 cursor-none"
+                data-accordion-target="#accordion-color-body-3"
+                aria-expanded="true"
+                aria-controls="accordion-color-body-3"
+              >
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-neutral-900 bg-opacity-70 z-0"
+                ></div>
+                <div
+                  class="absolute w-full h-full left-0 top-0 z-[-1] bg-[url('https://images.unsplash.com/photo-1579869847557-1f67382cc158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1634&q=80')] bg-cover bg-center"
+                ></div>
+                <span
+                  class="font-semibold font-outfit text-3xl xl:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF] z-[1]"
+                  >Social Media Optimization</span
+                >
+                <svg
+                  data-accordion-icon
+                  class="w-3 h-3 rotate-180 shrink-0"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5 5 1 1 5"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              id="accordion-color-body-3"
+              class="hidden mb-[120px] w-full"
+              aria-labelledby="accordion-color-heading-3"
+            >
+              <div class="w-full">
+                <h3
+                  class="text-center font-outfit font-medium text-[30px] xl:text-[48px] text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] leading-normal mb-[40px]"
+                >
+                  Recent Project
+                </h3>
+                <div class="flex flex-col gap-[50px]">
+                  <div
+                    class="w-full grid grid-cols-3 gap-8 items-start"
+                  >
+                    <div class="w-full flex flex-col pt-10 gap-3">
+                      <h3
+                        class="text-white font-outfit font-medium text-4xl"
+                      >
+                        Andaka Rantara Consultindo
+                      </h3>
+                      <p
+                        class="text-[#CECECE] font-inter text-xl font-light"
+                      >
+                        Lorem ipsum dolor sit amet consectetur. Mauris
+                        diam vitae cursus sit luctus cursus.
+                      </p>
+                    </div>
+                    <div
+                      class="w-full col-span-2 relative group/item"
+                    >
+                      <div
+                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-50 group-hover/item:opacity-0 transition duration-300"
+                      ></div>
+                      <div
+                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-[1] group-hover/item:translate-y-6 transition duration-300 z-[-1] group-hover/item:blur-xl"
+                      ></div>
+                      <img
+                        src="./src/assets/images/andaka-rantara.png"
+                        alt="andaka-rantara"
+                        class="w-full"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="w-full grid grid-cols-3 gap-8 items-start"
+                  >
+                    <div
+                      class="w-full col-span-2 relative group/item"
+                    >
+                      <div
+                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-50 group-hover/item:opacity-0 transition duration-300"
+                      ></div>
+                      <div
+                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-[1] group-hover/item:translate-y-6 transition duration-300 z-[-1] group-hover/item:blur-xl"
+                      ></div>
+                      <img
+                        src="./src/assets/images/arielle-mitra.png"
+                        alt="arielle-mitra"
+                        class="w-full"
+                      />
+                    </div>
+                    <div class="w-full flex flex-col pt-10 gap-3">
+                      <h3
+                        class="text-white font-outfit font-medium text-4xl"
+                      >
+                        Arielle Mitra Consulting
+                      </h3>
+                      <p
+                        class="text-[#CECECE] font-inter text-xl font-light"
+                      >
+                        Lorem ipsum dolor sit amet consectetur. Mauris
+                        diam vitae cursus sit luctus cursus.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start a project -->
+    <section class="w-full text-center mb-40">
+      <h1
+        class="font-outfit font-bold text-6xl xl:text-[96px] text-transparent bg-clip-text bg-gradient-to-b from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] drop-shadow-lg bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-300 leading-normal"
+      >
+        Start<br />a<br />Project
+      </h1>
+    </section>
+
+    <!-- Footer goes here -->
+    <footer class="w-full">
+      <div
+        class="w-full mx-auto container grid grid-cols-1 xl:grid-cols-2"
+      >
+        <div
+          class="flex flex-col justify-start items-center text-center gap-5 py-20"
+        >
+          <h3
+            class="font-outfit font-semibold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF]"
+          >
+            Contact Us
+          </h3>
+          <h4
+            class="font-inter font-medium text-lg xl:text-xl text-white"
+          >
+            gambitrojo@gmail.com
+          </h4>
+          <h4
+            class="font-inter font-medium text-lg xl:text-xl text-white"
+          >
+            +62 812 3456789
+          </h4>
+        </div>
+        <div
+          class="flex flex-col justify-start items-center text-center gap-5 py-20"
+        >
+          <h3
+            class="font-outfit font-semibold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF]"
+          >
+            Our Social Media
+          </h3>
+          <div class="flex gap-10 items-center">
+            <a href="#" class="cursor-none">
+              <img
+                src="./src/assets/icons/instagram.svg"
+                alt="instagram"
+                class="w-[33px] xl:w-[40px]"
+              />
+            </a>
+            <a href="#" class="cursor-none">
+              <img
+                src="./src/assets/icons/linkedin.svg"
+                alt="linkedin"
+                class="w-[28px] xl:w-[40px]"
+              />
+            </a>
+            <a href="#" class="cursor-none">
+              <img
+                src="./src/assets/icons/tiktok.svg"
+                alt="tiktok"
+                class="w-[28px] xl:w-[40px]"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-[#1D1D1D] text-center p-4">
+        <h4 class="text-[#A7A7A7] font-inter font-normal text-base">
+          @ 2023 Gambit Rojo All Right Reserved
+        </h4>
+      </div>
+    </footer>
+
+    <script src="./src/js/cursor1.js"></script>
+    <script src="./src/js/scrollreveal.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+    <script>
+      var rellax = new Rellax('.rellax', {
+        center: true,
+      });
+    </script>
+  </body>
+</html>
