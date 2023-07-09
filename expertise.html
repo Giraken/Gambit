@@ -52,7 +52,7 @@
       <!-- Navbar goes here -->
       <nav class="bg-transparent border-gray-200">
         <div
-          class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5 px-5 xl:px-0"
+          class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5 px-5 2xl:px-0"
         >
           <a
             href="/"
@@ -63,9 +63,9 @@
             </h1>
           </a>
           <button
-            data-color-toggle="navbar-default"
+            data-collapse-toggle="navbar-default"
             type="button"
-            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-default"
             aria-expanded="false"
           >
@@ -89,20 +89,20 @@
             id="navbar-default"
           >
             <ul
-              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 uppercase tracking-widest text-xl"
+              class="font-medium flex flex-col md:p-0 mt-4 bg-slate-600 md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0 uppercase tracking-widest text-xl"
             >
               <li>
                 <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 font-normal cursor-none"
+                  href="/"
+                  class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 font-normal cursor-none"
                   aria-current="page"
                   >Home</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 font-normal cursor-none"
+                  href="/expertise.html"
+                  class="block py-2 pl-3 pr-4 text-white hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 font-normal cursor-none bg-[#00B0FF] md:bg-transparent"
                   >Expertise</a
                 >
               </li>
@@ -126,16 +126,18 @@
       </nav>
 
       <!-- Hero goes here -->
-      <section class="w-full min-h-[50vh] md:min-h-[90vh] mb-40">
+      <section
+        class="w-full min-h-[50vh] md:min-h-[90vh] mb-40 mt-0 xl:mt-0"
+      >
         <div
-          class="w-full min-h-[100vh] text-center relative flex flex-col justify-center overflow-x-hidden"
+          class="w-full min-h-[100vh] text-center relative flex flex-col justify-center overflow-x-hidden gap-20"
         >
           <div
-            class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] relative grid grid-cols-3 text-center items-center mb-40"
+            class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] relative grid grid-cols-1 xl:grid-cols-3 text-center items-center px-5 xl:px-0 hero-item"
           >
             <div class="col-span-2">
               <h1
-                class="font-inter font-extralight text-white text-[34px] sm:text-[68px] xl:text-[64px] 2xl:text-[135px] drop-shadow-xl shadow-white text-left"
+                class="font-inter font-extralight text-white text-[34px] sm:text-[68px] xl:text-[64px] 2xl:text-[85px] drop-shadow-xl shadow-white text-center xl:text-left"
               >
                 We Provide Services Upon Your
                 <span
@@ -145,7 +147,7 @@
               </h1>
             </div>
             <div
-              class="w-full bg-transparent flex items-center justify-end"
+              class="w-full bg-transparent flex items-center justify-center xl:justify-end"
             >
               <img
                 src="./src/assets/images/logo-3d-transparent.png"
@@ -155,17 +157,16 @@
             </div>
           </div>
           <div
-            class="w-full mx-auto flex justify-center lg:max-w-[1150px] 2xl:max-w-[1366px]"
+            class="w-full mx-auto flex justify-center lg:max-w-[1150px] 2xl:max-w-[1366px] px-5 xl:px-0 hero-item"
           >
-            <div class="w-[75%]">
+            <div class="w-full xl:w-[75%]">
               <p
-                class="font-inter font-extralight text-white text-[22px] text-left"
+                class="font-inter font-normal text-[#CECECE] text-[20px] xl:text-[22px] 2xl:text-[24px] text-left opacity-[0.5]"
               >
                 Lorem ipsum dolor sit amet consectetur. Dictum lorem
                 egestas dui aliquam. Elementum nulla in eget massa
                 morbi eget. Fermentum suspendisse lorem volutpat nulla
-                id id dis tincidunt. Nam consequat leo nunc habitant
-                gravida posuere amet ultricies senectus.
+                id id dis tincidunt.
               </p>
             </div>
           </div>
@@ -174,12 +175,12 @@
     </div>
 
     <!-- Accordion goes here -->
-    <div class="w-full mb-[200px]">
+    <div class="w-full mb-[100px] accordion">
       <div
         class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px]"
       >
         <h1
-          class="text-center font-outfit font-semibold text-5xl xl:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] mt-16 mb-0 xl:mb-16"
+          class="text-center font-outfit font-semibold text-5xl xl:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] mt-16 mb-16 xl:mb-16"
         >
           Our Expertise
         </h1>
@@ -187,17 +188,15 @@
           <div
             id="accordion-color"
             data-accordion="collapse"
-            data-active-classes="bg-transparent text-white shadow-lg shadow-[#005982] transition duration-300 ease-in-out scale-105"
+            data-active-classes="bg-transparent text-white shadow-lg shadow-[#005982] transition duration-300 ease-in-out scale-100 xl:scale-105"
+            class="px-5 xl:px-0 accordion-parent"
           >
-            <div
-              id="accordion-color-heading-1"
-              class="relative mb-10"
-            >
+            <div id="accordion-color-heading-1" class="relative">
               <button
                 type="button"
-                class="flex items-center justify-between w-full p-5 font-medium text-left bg-transparent relative overflow-hidden py-7 cursor-none"
+                class="flex items-center justify-center xl:justify-between w-full p-5 font-medium text-left bg-transparent relative overflow-hidden py-7 cursor-none"
                 data-accordion-target="#accordion-color-body-1"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="accordion-color-body-1"
               >
                 <div
@@ -207,12 +206,12 @@
                   class="absolute w-full h-full left-0 top-0 z-[-1] bg-[url('https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80')] bg-cover bg-center"
                 ></div>
                 <span
-                  class="font-semibold font-outfit text-3xl xl:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF] z-[1]"
+                  class="font-semibold font-outfit text-3xl xl:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF] z-[1] whitespace-nowrap"
                   >Website Development</span
                 >
                 <svg
                   data-accordion-icon
-                  class="w-3 h-3 rotate-180 shrink-0"
+                  class="w-3 h-3 rotate-180 shrink-0 hidden xl:block"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -230,92 +229,47 @@
             </div>
             <div
               id="accordion-color-body-1"
-              class="hidden mb-[120px] w-full"
+              class="hidden mt-8 w-full"
               aria-labelledby="accordion-color-heading-1"
             >
-              <div class="w-full">
-                <h3
-                  class="text-center font-outfit font-medium text-[30px] xl:text-[48px] text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] leading-normal mb-[40px]"
+              <div
+                class="w-full grid xl:grid-cols-3 items-start gap-10"
+              >
+                <div class="xl:col-span-2 w-full bg-transparent">
+                  <p
+                    class="font-inter text-[#A7A7A7] font-normal text-2xl leading-[1.7] 2xl:leading-[2]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Magni illo voluptatibus rem aut
+                    ad? Nam id fuga voluptate sunt sapiente numquam
+                    recusandae voluptas ex sequi quae autem inventore
+                    dolores officia facere rerum dolore eos tenetur
+                    excepturi cupiditate explicabo, asperiores
+                    debitis. Illum veniam nemo similique error quaerat
+                    quae nihil rem excepturi aspernatur mollitia
+                    reprehenderit tempora, voluptatum, officiis ad
+                    animi vero fuga, consectetur velit placeat cum
+                    distinctio dolorum?
+                  </p>
+                </div>
+                <div
+                  class="w-full bg-transparent order-first xl:order-last"
                 >
-                  Recent Project
-                </h3>
-                <div class="flex flex-col gap-[50px]">
-                  <div
-                    class="w-full grid grid-cols-3 gap-8 items-start"
-                  >
-                    <div class="w-full flex flex-col pt-10 gap-3">
-                      <h3
-                        class="text-white font-outfit font-medium text-4xl"
-                      >
-                        Andaka Rantara Consultindo
-                      </h3>
-                      <p
-                        class="text-[#CECECE] font-inter text-xl font-light"
-                      >
-                        Lorem ipsum dolor sit amet consectetur. Mauris
-                        diam vitae cursus sit luctus cursus.
-                      </p>
-                    </div>
-                    <div
-                      class="w-full col-span-2 relative group/item"
-                    >
-                      <div
-                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-50 group-hover/item:opacity-0 transition duration-300"
-                      ></div>
-                      <div
-                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-[1] group-hover/item:translate-y-6 transition duration-300 z-[-1] group-hover/item:blur-xl"
-                      ></div>
-                      <img
-                        src="./src/assets/images/andaka-rantara.png"
-                        alt="andaka-rantara"
-                        class="w-full"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="w-full grid grid-cols-3 gap-8 items-start"
-                  >
-                    <div
-                      class="w-full col-span-2 relative group/item"
-                    >
-                      <div
-                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-50 group-hover/item:opacity-0 transition duration-300"
-                      ></div>
-                      <div
-                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-[1] group-hover/item:translate-y-6 transition duration-300 z-[-1] group-hover/item:blur-xl"
-                      ></div>
-                      <img
-                        src="./src/assets/images/arielle-mitra.png"
-                        alt="arielle-mitra"
-                        class="w-full"
-                      />
-                    </div>
-                    <div class="w-full flex flex-col pt-10 gap-3">
-                      <h3
-                        class="text-white font-outfit font-medium text-4xl"
-                      >
-                        Arielle Mitra Consulting
-                      </h3>
-                      <p
-                        class="text-[#CECECE] font-inter text-xl font-light"
-                      >
-                        Lorem ipsum dolor sit amet consectetur. Mauris
-                        diam vitae cursus sit luctus cursus.
-                      </p>
-                    </div>
-                  </div>
+                  <img
+                    src="./src/assets/images/web-dev.jpg"
+                    alt="web-dev"
+                    class="w-full grayscale brightness-75"
+                  />
                 </div>
               </div>
             </div>
-            <div
-              id="accordion-color-heading-2"
-              class="relative mb-10"
-            >
+            <div class="w-full h-1 bg-[#47ABD8] my-8"></div>
+            <div id="accordion-color-heading-2" class="relative">
               <button
                 type="button"
-                class="flex items-center justify-between w-full p-5 font-medium text-left bg-transparent relative overflow-hidden py-7 cursor-none"
+                class="flex items-center justify-center xl:justify-between w-full p-5 font-medium text-left bg-transparent relative overflow-hidden py-7 cursor-none"
                 data-accordion-target="#accordion-color-body-2"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="accordion-color-body-2"
               >
                 <div
@@ -325,12 +279,12 @@
                   class="absolute w-full h-full left-0 top-0 z-[-1] bg-[url('https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center"
                 ></div>
                 <span
-                  class="font-semibold font-outfit text-3xl xl:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF] z-[1]"
+                  class="font-semibold font-outfit text-3xl xl:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF] z-[1] whitespace-nowrap"
                   >Digital Marketing</span
                 >
                 <svg
                   data-accordion-icon
-                  class="w-3 h-3 rotate-180 shrink-0"
+                  class="w-3 h-3 rotate-180 shrink-0 hidden xl:block"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -348,92 +302,45 @@
             </div>
             <div
               id="accordion-color-body-2"
-              class="hidden mb-[120px] w-full"
+              class="hidden mt-8 w-full"
               aria-labelledby="accordion-color-heading-2"
             >
-              <div class="w-full">
-                <h3
-                  class="text-center font-outfit font-medium text-[30px] xl:text-[48px] text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] leading-normal mb-[40px]"
-                >
-                  Recent Project
-                </h3>
-                <div class="flex flex-col gap-[50px]">
-                  <div
-                    class="w-full grid grid-cols-3 gap-8 items-start"
+              <div
+                class="w-full grid xl:grid-cols-3 grid-cols-1 items-start gap-10"
+              >
+                <div class="w-full relative">
+                  <img
+                    src="./src/assets/images/digital-marketing.jpg"
+                    alt="digital-marketing"
+                    class="w-full grayscale brightness-75"
+                  />
+                </div>
+                <div class="xl:col-span-2 w-full">
+                  <p
+                    class="font-inter text-[#A7A7A7] font-normal text-2xl leading-[1.7] 2xl:leading-[2]"
                   >
-                    <div class="w-full flex flex-col pt-10 gap-3">
-                      <h3
-                        class="text-white font-outfit font-medium text-4xl"
-                      >
-                        Andaka Rantara Consultindo
-                      </h3>
-                      <p
-                        class="text-[#CECECE] font-inter text-xl font-light"
-                      >
-                        Lorem ipsum dolor sit amet consectetur. Mauris
-                        diam vitae cursus sit luctus cursus.
-                      </p>
-                    </div>
-                    <div
-                      class="w-full col-span-2 relative group/item"
-                    >
-                      <div
-                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-50 group-hover/item:opacity-0 transition duration-300"
-                      ></div>
-                      <div
-                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-[1] group-hover/item:translate-y-6 transition duration-300 z-[-1] group-hover/item:blur-xl"
-                      ></div>
-                      <img
-                        src="./src/assets/images/andaka-rantara.png"
-                        alt="andaka-rantara"
-                        class="w-full"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="w-full grid grid-cols-3 gap-8 items-start"
-                  >
-                    <div
-                      class="w-full col-span-2 relative group/item"
-                    >
-                      <div
-                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-50 group-hover/item:opacity-0 transition duration-300"
-                      ></div>
-                      <div
-                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-[1] group-hover/item:translate-y-6 transition duration-300 z-[-1] group-hover/item:blur-xl"
-                      ></div>
-                      <img
-                        src="./src/assets/images/arielle-mitra.png"
-                        alt="arielle-mitra"
-                        class="w-full"
-                      />
-                    </div>
-                    <div class="w-full flex flex-col pt-10 gap-3">
-                      <h3
-                        class="text-white font-outfit font-medium text-4xl"
-                      >
-                        Arielle Mitra Consulting
-                      </h3>
-                      <p
-                        class="text-[#CECECE] font-inter text-xl font-light"
-                      >
-                        Lorem ipsum dolor sit amet consectetur. Mauris
-                        diam vitae cursus sit luctus cursus.
-                      </p>
-                    </div>
-                  </div>
+                    Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Magni illo voluptatibus rem aut
+                    ad? Nam id fuga voluptate sunt sapiente numquam
+                    recusandae voluptas ex sequi quae autem inventore
+                    dolores officia facere rerum dolore eos tenetur
+                    excepturi cupiditate explicabo, asperiores
+                    debitis. Illum veniam nemo similique error quaerat
+                    quae nihil rem excepturi aspernatur mollitia
+                    reprehenderit tempora, voluptatum, officiis ad
+                    animi vero fuga, consectetur velit placeat cum
+                    distinctio dolorum?
+                  </p>
                 </div>
               </div>
             </div>
-            <div
-              id="accordion-color-heading-3"
-              class="relative mb-10"
-            >
+            <div class="w-full h-1 bg-[#47ABD8] my-8"></div>
+            <div id="accordion-color-heading-3" class="relative">
               <button
                 type="button"
-                class="flex items-center justify-between w-full p-5 font-medium text-left bg-transparent relative overflow-hidden py-7 cursor-none"
+                class="flex items-center justify-center xl:justify-between w-full p-5 font-medium text-left bg-transparent relative overflow-hidden py-7 cursor-none"
                 data-accordion-target="#accordion-color-body-3"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls="accordion-color-body-3"
               >
                 <div
@@ -443,12 +350,12 @@
                   class="absolute w-full h-full left-0 top-0 z-[-1] bg-[url('https://images.unsplash.com/photo-1579869847557-1f67382cc158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1634&q=80')] bg-cover bg-center"
                 ></div>
                 <span
-                  class="font-semibold font-outfit text-3xl xl:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF] z-[1]"
+                  class="font-semibold font-outfit text-2xl xl:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF] z-[1] whitespace-nowrap"
                   >Social Media Optimization</span
                 >
                 <svg
                   data-accordion-icon
-                  class="w-3 h-3 rotate-180 shrink-0"
+                  class="w-3 h-3 rotate-180 shrink-0 hidden xl:block"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -466,81 +373,120 @@
             </div>
             <div
               id="accordion-color-body-3"
-              class="hidden mb-[120px] w-full"
+              class="hidden mt-8 w-full"
               aria-labelledby="accordion-color-heading-3"
             >
-              <div class="w-full">
-                <h3
-                  class="text-center font-outfit font-medium text-[30px] xl:text-[48px] text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] leading-normal mb-[40px]"
-                >
-                  Recent Project
-                </h3>
-                <div class="flex flex-col gap-[50px]">
-                  <div
-                    class="w-full grid grid-cols-3 gap-8 items-start"
+              <div
+                class="w-full grid xl:grid-cols-3 items-start gap-10"
+              >
+                <div class="xl:col-span-2 w-full bg-transparent">
+                  <p
+                    class="font-inter text-[#A7A7A7] font-normal text-2xl leading-[1.7] 2xl:leading-[2]"
                   >
-                    <div class="w-full flex flex-col pt-10 gap-3">
-                      <h3
-                        class="text-white font-outfit font-medium text-4xl"
-                      >
-                        Andaka Rantara Consultindo
-                      </h3>
-                      <p
-                        class="text-[#CECECE] font-inter text-xl font-light"
-                      >
-                        Lorem ipsum dolor sit amet consectetur. Mauris
-                        diam vitae cursus sit luctus cursus.
-                      </p>
-                    </div>
-                    <div
-                      class="w-full col-span-2 relative group/item"
-                    >
-                      <div
-                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-50 group-hover/item:opacity-0 transition duration-300"
-                      ></div>
-                      <div
-                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-[1] group-hover/item:translate-y-6 transition duration-300 z-[-1] group-hover/item:blur-xl"
-                      ></div>
-                      <img
-                        src="./src/assets/images/andaka-rantara.png"
-                        alt="andaka-rantara"
-                        class="w-full"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="w-full grid grid-cols-3 gap-8 items-start"
-                  >
-                    <div
-                      class="w-full col-span-2 relative group/item"
-                    >
-                      <div
-                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-50 group-hover/item:opacity-0 transition duration-300"
-                      ></div>
-                      <div
-                        class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-[1] group-hover/item:translate-y-6 transition duration-300 z-[-1] group-hover/item:blur-xl"
-                      ></div>
-                      <img
-                        src="./src/assets/images/arielle-mitra.png"
-                        alt="arielle-mitra"
-                        class="w-full"
-                      />
-                    </div>
-                    <div class="w-full flex flex-col pt-10 gap-3">
-                      <h3
-                        class="text-white font-outfit font-medium text-4xl"
-                      >
-                        Arielle Mitra Consulting
-                      </h3>
-                      <p
-                        class="text-[#CECECE] font-inter text-xl font-light"
-                      >
-                        Lorem ipsum dolor sit amet consectetur. Mauris
-                        diam vitae cursus sit luctus cursus.
-                      </p>
-                    </div>
-                  </div>
+                    Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Magni illo voluptatibus rem aut
+                    ad? Nam id fuga voluptate sunt sapiente numquam
+                    recusandae voluptas ex sequi quae autem inventore
+                    dolores officia facere rerum dolore eos tenetur
+                    excepturi cupiditate explicabo, asperiores
+                    debitis. Illum veniam nemo similique error quaerat
+                    quae nihil rem excepturi aspernatur mollitia
+                    reprehenderit tempora, voluptatum, officiis ad
+                    animi vero fuga, consectetur velit placeat cum
+                    distinctio dolorum?
+                  </p>
                 </div>
+                <div
+                  class="w-full bg-transparent order-first xl:order-last"
+                >
+                  <img
+                    src="./src/assets/images/social-media-opt.jpg"
+                    alt="social-media-opt"
+                    class="w-full grayscale brightness-75"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="w-full h-1 bg-[#47ABD8] my-8"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Project -->
+    <div class="w-full mb-[120px]">
+      <div
+        class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px]"
+      >
+        <div class="w-full px-5 xl:px-0">
+          <h3
+            class="text-center font-outfit font-medium text-[30px] xl:text-[48px] text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] leading-normal mb-[20px] xl:mb-[40px] recent-projects-title"
+          >
+            Recent Projects
+          </h3>
+          <div class="flex flex-col gap-[56px]">
+            <div
+              class="w-full grid grid-cols-1 xl:grid-cols-3 gap-5 xl:gap-8 items-start recent-projects"
+            >
+              <div class="w-full flex flex-col pt-0 xl:pt-10 gap-3">
+                <h3
+                  class="text-white font-outfit font-medium text-[24px] xl:text-[36px] leading-none"
+                >
+                  Andaka Rantara Consultindo
+                </h3>
+                <p
+                  class="text-[#CECECE] font-inter text-base xl:text-xl font-normal"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Mauris diam
+                  vitae cursus sit luctus cursus.
+                </p>
+              </div>
+              <div
+                class="w-full col-span-2 relative group/item order-first xl:order-last"
+              >
+                <div
+                  class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-50 group-hover/item:opacity-0 transition duration-300"
+                ></div>
+                <div
+                  class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-[1] group-hover/item:translate-y-6 transition duration-300 z-[-1] group-hover/item:blur-xl"
+                ></div>
+                <img
+                  src="./src/assets/images/andaka-rantara.png"
+                  alt="andaka-rantara"
+                  class="w-full"
+                />
+              </div>
+            </div>
+            <div
+              class="w-full grid xl:grid-cols-3 grid-cols-1 gap-5 xl:gap-8 items-start recent-projects"
+            >
+              <div
+                class="w-full col-span-2 relative group/item order-first"
+              >
+                <div
+                  class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-50 group-hover/item:opacity-0 transition duration-300"
+                ></div>
+                <div
+                  class="absolute w-full h-full top-0 left-0 bg-[#005982] opacity-[1] group-hover/item:translate-y-6 transition duration-300 z-[-1] group-hover/item:blur-xl"
+                ></div>
+                <img
+                  src="./src/assets/images/arielle-mitra.png"
+                  alt="arielle-mitra"
+                  class="w-full"
+                />
+              </div>
+              <div class="w-full flex flex-col pt-0 xl:pt-10 gap-3">
+                <h3
+                  class="text-white font-outfit font-medium text-[24px] xl:text-[36px] leading-none"
+                >
+                  Arielle Mitra Consulting
+                </h3>
+                <p
+                  class="text-[#CECECE] font-inter text-base xl:text-xl font-normal"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Mauris diam
+                  vitae cursus sit luctus cursus.
+                </p>
               </div>
             </div>
           </div>
@@ -624,12 +570,12 @@
     <script src="./src/js/cursor1.js"></script>
     <script src="./src/js/scrollreveal.js"></script>
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script> -->
 
-    <script>
+    <!-- <script>
       var rellax = new Rellax('.rellax', {
         center: true,
       });
-    </script>
+    </script> -->
   </body>
 </html>

@@ -44,13 +44,13 @@
 
     <div class="relative w-full">
       <div
-        class="absolute w-[300px] h-[300px] xl:w-[500px] 2xl:w-[700px] 2xl:h-[700px] xl:h-[500px] bg-blue-800 z-[-1] top-[50%] left-[40%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[156px] opacity-[0.6]"
+        class="absolute w-[300px] h-[300px] xl:w-[500px] 2xl:w-[700px] 2xl:h-[700px] xl:h-[500px] bg-blue-800 z-[-1] top-[50%] left-[40%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[156px] opacity-[1] animate-pulse"
       ></div>
       <div
-        class="absolute w-[200px] h-[200px] xl:w-[300px] 2xl:w-[400px] 2xl:h-[400px] xl:h-[300px] bg-[#00B0FF] z-[-1] top-[50%] left-[65%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[128px] opacity-[0.6]"
+        class="absolute w-[200px] h-[200px] xl:w-[300px] 2xl:w-[400px] 2xl:h-[400px] xl:h-[300px] bg-[#00B0FF] z-[-1] top-[50%] left-[65%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[128px] opacity-[1] animate-pulse2"
       ></div>
       <!-- Navbar goes here -->
-      <nav class="bg-transparent border-gray-200">
+      <nav class="bg-transparent">
         <div
           class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5 px-5"
         >
@@ -65,7 +65,7 @@
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 md:hidden hover:bg-gray-100"
             aria-controls="navbar-default"
             aria-expanded="false"
           >
@@ -89,19 +89,19 @@
             id="navbar-default"
           >
             <ul
-              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 uppercase tracking-widest text-xl"
+              class="font-medium flex flex-col md:p-0 mt-4 md:flex-row bg-slate-600 md:bg-transparent md:space-x-8 md:mt-0 md:border-0 uppercase tracking-widest text-xl"
             >
               <li>
                 <a
-                  href="#"
-                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 font-normal cursor-none"
+                  href="/"
+                  class="block py-2 pl-3 pr-4 text-white bg-[#00B0FF] md:bg-transparent md:p-0 font-normal cursor-none"
                   aria-current="page"
                   >Home</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/expertise.html"
                   class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 font-normal cursor-none"
                   >Expertise</a
                 >
@@ -134,12 +134,12 @@
             class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] relative flex flex-col text-center"
           >
             <h1
-              class="font-inter font-thin text-white text-[34px] sm:text-[68px] xl:text-[110px] 2xl:text-[135px] leading-[15px] drop-shadow-xl shadow-white"
+              class="hero-item font-inter font-thin text-white text-[34px] sm:text-[68px] xl:text-[110px] 2xl:text-[135px] leading-[15px] drop-shadow-xl shadow-white"
             >
               We are a Social Media
             </h1>
             <h1
-              class="text-bg font-outfit font-black text-5xl sm:text-[96px] xl:text-[160px] 2xl:text-[190px] leading-normal text-transparent bg-clip-text bg-[length:120%_120%] bg-[url('https://images.unsplash.com/photo-1561211919-1947abbbb35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80')] relative overflow-visible drop-shadow-lg"
+              class="hero-item2 text-bg font-outfit font-black text-5xl sm:text-[96px] xl:text-[160px] 2xl:text-[190px] leading-normal text-transparent bg-clip-text bg-[length:120%_120%] bg-[url('https://images.unsplash.com/photo-1561211919-1947abbbb35b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80')] relative overflow-visible drop-shadow-lg"
             >
               Digital Agency
             </h1>
@@ -150,7 +150,9 @@
               class="absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-[-1] opacity-[0.2] w-56 xl:w-[30vw]"
             />
           </div>
-          <div class="absolute bottom-[30px] overflow-x-visible">
+          <div
+            class="absolute bottom-[30px] overflow-x-visible hero-item3"
+          >
             <div class="relative flex overflow-x-visible">
               <div class="animate-marquee whitespace-nowrap z-0">
                 <p
@@ -241,12 +243,14 @@
         data-rellax-desktop-speed="10"
       >
         <div
-          class="absolute w-[300px] h-[300px] xl:w-[500px] 2xl:w-[400px] 2xl:h-[400px] xl:h-[500px] bg-blue-600 z-[-1] top-[100%] left-0 sm:left-[25%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[156px] opacity-[1]"
+          class="absolute w-[300px] h-[300px] xl:w-[500px] 2xl:w-[400px] 2xl:h-[400px] xl:h-[500px] bg-blue-600 z-[-1] top-[100%] left-0 sm:left-[25%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[156px] opacity-[1] animate-pulse"
         ></div>
         <div
-          class="absolute w-[250px] h-[250px] xl:w-[300px] 2xl:w-[300px] 2xl:h-[300px] xl:h-[300px] bg-[#00B0FF] z-[-1] top-[350%] sm:top-[250%] right-[0%] -translate-y-[50%] rounded-full blur-[96px] opacity-[0.6]"
+          class="absolute w-[250px] h-[250px] xl:w-[300px] 2xl:w-[300px] 2xl:h-[300px] xl:h-[300px] bg-[#00B0FF] z-[-1] top-[350%] sm:top-[250%] right-[0%] -translate-y-[50%] rounded-full blur-[96px] opacity-[1] animate-pulse2"
         ></div>
-        <div class="px-5 xl:px-60 w-full relative">
+        <div
+          class="px-5 xl:px-[300px] 2xl:px-[400px] w-full relative"
+        >
           <div class="w-full pt-12 relative">
             <h1
               class="uppercase font-outfit font-semibold text-5xl xl:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] mt-16 mb-0 xl:mb-8 rellax z-[3]"
@@ -257,7 +261,7 @@
               About Us
             </h1>
             <p
-              class="w-[100%] font-inter text-3xl xl:text-4xl font-medium text-[#A7A7A7] leading-[1.5] mt-[20px] xl:mt-0 mb-24 rellax z-[-1] absolute top-[220px]"
+              class="w-[100%] font-inter text-3xl xl:text-4xl font-medium text-[#A7A7A7] leading-[1.5] mt-[20px] xl:mt-0 mb-24 rellax z-[3] absolute top-[250px]"
               data-rellax-speed="3"
               data-rellax-mobile-speed="-8"
               data-rellax-desktop-speed="-3"
@@ -294,10 +298,10 @@
             </div>
           </div>
           <div
-            class="absolute top-[150px] xl:top-[-50px] left-[20px] xl:left-[120px] z-[-1]"
+            class="absolute top-[150px] xl:top-[-50px] left-[20px] xl:left-[0px] z-[-1]"
           >
             <div
-              class="relative w-full overflow-hidden h-[175px] xl:h-[320px] 2xl:h-[380px] rellax"
+              class="relative w-full overflow-hidden h-[175px] xl:h-[320px] 2xl:h-[420px] rellax"
               data-rellax-speed="6"
               data-rellax-mobile-speed="5"
               data-rellax-desktop-speed="10"
@@ -313,10 +317,10 @@
             </div>
           </div>
           <div
-            class="absolute bottom-[-350px] xl:bottom-[-300px] 2xl:bottom-[-350px] right-[20px] xl:right-[120px] z-[-3]"
+            class="absolute bottom-[-350px] xl:bottom-[-250px] 2xl:bottom-[-350px] right-[20px] xl:right-[0px] z-[-3]"
           >
             <div
-              class="relative w-full overflow-hidden h-[125px] xl:h-[250px] 2xl:h-[300px] rellax"
+              class="relative w-full overflow-hidden h-[125px] xl:h-[200px] 2xl:h-[250px] rellax"
               data-rellax-speed="6"
               data-rellax-mobile-speed="10"
               data-rellax-desktop-speed="10"

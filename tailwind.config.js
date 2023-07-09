@@ -10,6 +10,8 @@ module.exports = {
       animation: {
         marquee: 'marquee 75s linear infinite',
         marquee2: 'marquee2 75s linear infinite',
+        pulse: 'pulse 10s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        pulse2: 'pulse 10s cubic-bezier(0.4, 0, 0.6, 1) infinite 3s',
       },
       keyframes: {
         marquee: {
