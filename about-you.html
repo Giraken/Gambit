@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/assets/icons/web-icon.svg"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Expertise | Gambit Rojo</title>
+  </head>
+
+  <body>
+    <!-- Custom cursor -->
+    <div
+      id="cursor1"
+      class="hidden xl:block fixed w-[14px] h-[14px] bg-[#B5FBFF] rounded-full translate-x-[-50%] translate-y-[-50%] pointer-events-none z-50"
+    ></div>
+    <div
+      id="cursor2"
+      class="hidden xl:block fixed w-[52px] h-[52px] border-[#258287] border rounded-full translate-x-[-50%] translate-y-[-50%] duration-700 ease-out bg-transparent z-50 pointer-events-none"
+    ></div>
+
+    <div class="relative w-full">
+      <!-- <div
+        class="absolute w-[300px] h-[300px] xl:w-[500px] 2xl:w-[700px] 2xl:h-[700px] xl:h-[500px] bg-blue-600 z-[-1] top-[50%] left-[40%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[156px] opacity-[0.6]"
+      ></div>
+      <div
+        class="absolute w-[200px] h-[200px] xl:w-[300px] 2xl:w-[400px] 2xl:h-[400px] xl:h-[300px] bg-teal-400 z-[-1] top-[50%] left-[65%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[128px] opacity-[0.6]"
+      ></div> -->
+      <!-- Navbar goes here -->
+      <nav class="bg-transparent border-gray-200">
+        <div
+          class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5 px-5 xl:px-0"
+        >
+          <a
+            href="/"
+            class="flex items-center text-3xl font-bold font-outfit cursor-none"
+          >
+            <h1 class="text-[#00B0FF]">
+              Gambit<span class="text-white">Rojo</span>
+            </h1>
+          </a>
+          <button
+            data-color-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="hidden w-full md:block md:w-auto"
+            id="navbar-default"
+          >
+            <ul
+              class="flex flex-col p-4 mt-4 text-xl font-medium tracking-widest uppercase border border-gray-100 rounded-lg md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="block py-2 pl-3 pr-4 font-normal text-white bg-blue-700 rounded md:bg-transparent md:p-0 cursor-none"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="expertise.html"
+                  class="block py-2 pl-3 pr-4 font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 cursor-none"
+                  >Expertise</a
+                >
+              </li>
+              <li>
+                <a
+                  href="insight.html"
+                  class="block py-2 pl-3 pr-4 font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 cursor-none"
+                  >Insight</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about-you.html"
+                  class="block py-2 pl-3 pr-4 font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 cursor-none"
+                  >About You</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero goes here -->
+      <section class="w-full min-h-[50vh] md:min-h-[90vh] mb-40">
+        <div class="w-full min-h-[100vh] text-center relative flex-col justify-center overflow-x-hidden grid grid-cols-2 md:grid-cols-2 gap 4">
+          <div class="justify-center w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] relative grid grid-cols-3 text-center items-center mb-40">
+            <div class="col-span-2">
+              <h1 class="font-inter font-medium text-white text-[34px] sm:text-[68px] xl:text-[32px] 2xl:text-[65px] drop-shadow-xl shadow-white text-left">
+                Let's start a <br>
+                <span class="font-outfit font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF]">
+                  project together
+                </span>
+              </h1>
+
+              <form>
+                <div class="mb-6 text-left">
+                  <p class="text-3xl font-medium leading-normal text-white ">What's your name?</p>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
+                    <input type="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John Doe*" required>
+                </div>
+                <div class="mb-6 text-left">
+                  <p class="text-3xl font-medium leading-normal text-white">What's your email</p>
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
+                  <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="john@doe.com*" required>
+                </div>
+                <div class="mb-6 text-left">
+                  <p class="text-3xl font-medium leading-normal text-white">What's the name of your company</p>
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
+                  <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Gambit Studio" required>
+                </div>
+                <div class="mb-6 text-left">
+                  <p class="text-3xl font-medium leading-normal text-white">What can we help you with</p>
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
+                  <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Digital Marketing, Web Development, ..." required>
+                </div>
+                <div class="mb-6 text-left">
+                  <p class="text-3xl font-medium leading-normal text-white">Tell us about the project?</p>
+                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
+                  <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Hello Gambit Rojo, we have ..." required>
+                </div>
+              <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+            </form>
+            </div>
+          </div>
+
+          <div class="items-center justify-start w-full bg-transparent">
+            <img src="./src/assets/images/logo-3d-transparent.png" alt="logo-transparent" class="relative xl:w-[7vw]"/>
+          </div>
+        </div>
+
+        
+      </section>
+    </div>
+
+    <!-- Start a project -->
+    <section class="w-full mb-40 text-center">
+      <h1
+        class="font-outfit font-bold text-6xl xl:text-[96px] text-transparent bg-clip-text bg-gradient-to-b from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] drop-shadow-lg bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all duration-300 leading-normal"
+      >
+        Start<br />a<br />Project
+      </h1>
+    </section>
+
+    <!-- Footer goes here -->
+    <footer class="w-full">
+      <div
+        class="container grid w-full grid-cols-1 mx-auto xl:grid-cols-2"
+      >
+        <div
+          class="flex flex-col items-center justify-start gap-5 py-20 text-center"
+        >
+          <h3
+            class="font-outfit font-semibold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF]"
+          >
+            Contact Us
+          </h3>
+          <h4
+            class="text-lg font-medium text-white font-inter xl:text-xl"
+          >
+            gambitrojo@gmail.com
+          </h4>
+          <h4
+            class="text-lg font-medium text-white font-inter xl:text-xl"
+          >
+            +62 812 3456789
+          </h4>
+        </div>
+        <div
+          class="flex flex-col items-center justify-start gap-5 py-20 text-center"
+        >
+          <h3
+            class="font-outfit font-semibold text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF]"
+          >
+            Our Social Media
+          </h3>
+          <div class="flex items-center gap-10">
+            <a href="#" class="cursor-none">
+              <img
+                src="./src/assets/icons/instagram.svg"
+                alt="instagram"
+                class="w-[33px] xl:w-[40px]"
+              />
+            </a>
+            <a href="#" class="cursor-none">
+              <img
+                src="./src/assets/icons/linkedin.svg"
+                alt="linkedin"
+                class="w-[28px] xl:w-[40px]"
+              />
+            </a>
+            <a href="#" class="cursor-none">
+              <img
+                src="./src/assets/icons/tiktok.svg"
+                alt="tiktok"
+                class="w-[28px] xl:w-[40px]"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-[#1D1D1D] text-center p-4">
+        <h4 class="text-[#A7A7A7] font-inter font-normal text-base">
+          @ 2023 Gambit Rojo All Right Reserved
+        </h4>
+      </div>
+    </footer>
+
+    <script src="./src/js/cursor1.js"></script>
+    <script src="./src/js/scrollreveal.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+    <script>
+      var rellax = new Rellax('.rellax', {
+        center: true,
+      });
+    </script>
+  </body>
+</html>
