@@ -26,6 +26,24 @@ body {
     /* scroll-behavior: slow; */
 }
 
+a, button {
+    cursor: none;
+}
+
+.active {
+    color: white !important;
+    font-weight: 600;
+    background-color: #00B0FF;
+}
+
+@media only screen and (min-width: 576px) {
+    .active {
+        color: #47ABD8 !important;
+        font-weight: 600;
+        background-color: transparent;
+    }
+}
+
 .text-bg {
     animation: bg-animation 7.5s cubic-bezier(0.3, 0, 0.7, 1) infinite;
 }

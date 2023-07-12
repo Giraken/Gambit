@@ -52,7 +52,7 @@
       <!-- Navbar goes here -->
       <nav class="bg-transparent">
         <div
-          class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5 px-5"
+          class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5 px-5 2xl:px-0"
         >
           <a
             href="/"
@@ -65,7 +65,7 @@
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 md:hidden hover:bg-gray-100"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 md:hidden"
             aria-controls="navbar-default"
             aria-expanded="false"
           >
@@ -94,7 +94,7 @@
               <li>
                 <a
                   href="/"
-                  class="block py-2 pl-3 pr-4 text-white bg-[#00B0FF] md:bg-transparent md:p-0 font-normal cursor-none"
+                  class="block py-2 pl-3 pr-4 text-white bg-[#00B0FF] md:bg-transparent md:p-0 font-normal cursor-none active"
                   aria-current="page"
                   >Home</a
                 >
@@ -102,21 +102,21 @@
               <li>
                 <a
                   href="/expertise.html"
-                  class="block py-2 pl-3 pr-4 font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 cursor-none"
+                  class="block py-2 pl-3 pr-4 font-normal text-white rounded md:border-0 md:p-0 cursor-none"
                   >Expertise</a
                 >
               </li>
               <li>
                 <a
-                  href="insight.html"
-                  class="block py-2 pl-3 pr-4 font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 cursor-none"
+                  href="/insight.html"
+                  class="block py-2 pl-3 pr-4 font-normal text-white rounded md:border-0 md:p-0 cursor-none"
                   >Insight</a
                 >
               </li>
               <li>
                 <a
-                  href="about-you.html"
-                  class="block py-2 pl-3 pr-4 font-normal text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 cursor-none"
+                  href="/about-you.html"
+                  class="block py-2 pl-3 pr-4 font-normal text-white rounded md:border-0 md:p-0 cursor-none"
                   >About You</a
                 >
               </li>
@@ -338,6 +338,7 @@
         </div>
       </div>
     </div>
+
     <!-- About 3 goes here -->
     <div
       class="w-full lg:max-w-[1150px] 2xl:max-w-[1366px] mx-auto rellax mt-0 xl:mt-[-100px] px-5 xl:px-0 mb-60 xl:mb-0"
@@ -417,7 +418,7 @@
     <!-- Footer goes here -->
     <footer class="w-full">
       <div
-        class="container grid w-full grid-cols-1 mx-auto xl:grid-cols-2"
+        class="container grid w-full grid-cols-1 mx-auto sm:grid-cols-2"
       >
         <div
           class="flex flex-col items-center justify-start gap-5 py-20 text-center"
@@ -477,6 +478,23 @@
         </h4>
       </div>
     </footer>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement('script'),
+          s0 = document.getElementsByTagName('script')[0];
+        s1.async = true;
+        s1.src =
+          'https://embed.tawk.to/64abfae494cf5d49dc62a57d/1h4vso42d';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
 
     <script src="./src/js/cursor1.js"></script>
     <script src="./src/js/scrollreveal.js"></script>
