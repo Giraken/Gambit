@@ -43,14 +43,24 @@
     ></div>
 
     <div class="relative w-full">
-      <!-- <div
-        class="absolute w-[300px] h-[300px] xl:w-[500px] 2xl:w-[700px] 2xl:h-[700px] xl:h-[500px] bg-blue-600 z-[-1] top-[50%] left-[40%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[156px] opacity-[0.6]"
-      ></div>
       <div
+        class="absolute w-[250px] h-[250px] xl:w-[500px] 2xl:w-[700px] 2xl:h-[700px] xl:h-[500px] bg-blue-800 z-[-1] top-[45%] xl:top-[35%] left-[0%] xl:left-[15%] -translate-x-[0%] -translate-y-[50%] rounded-full blur-[96px] xl:blur-[156px] opacity-[1] animate-pulse rellax"
+        data-rellax-xs-speed="3"
+        data-rellax-mobile-speed="8"
+        data-rellax-desktop-speed="10"
+      ></div>
+      <!-- <div
         class="absolute w-[200px] h-[200px] xl:w-[300px] 2xl:w-[400px] 2xl:h-[400px] xl:h-[300px] bg-teal-400 z-[-1] top-[50%] left-[65%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[128px] opacity-[0.6]"
       ></div> -->
       <!-- Navbar goes here -->
-      <nav class="bg-transparent border-gray-200">
+      <div
+        class="backbone h-[80px] xl:h-[76px] absolute w-full bg-transparent"
+        id="backbone"
+      ></div>
+      <nav
+        class="w-full top-0 left-0 z-20 relative transition duration-500 ease-in-out"
+        id="navbar"
+      >
         <div
           class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5 px-5 2xl:px-0"
         >
@@ -89,7 +99,7 @@
             id="navbar-default"
           >
             <ul
-              class="flex flex-col mt-4 text-xl font-medium tracking-widest uppercase md:p-0 bg-slate-800 md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0"
+              class="flex flex-col mt-4 text-xl font-medium tracking-widest uppercase md:p-0 bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0"
             >
               <li>
                 <a
@@ -175,7 +185,13 @@
     </div>
 
     <!-- Accordion goes here -->
-    <div class="w-full mb-[100px] accordion">
+    <div class="w-full mb-[100px] accordion relative">
+      <div
+        class="absolute w-[200px] h-[200px] xl:w-[400px] 2xl:w-[500px] 2xl:h-[500px] xl:h-[400px] bg-teal-400 z-[-1] top-[40%] right-[0%] -translate-x-[0%] -translate-y-[50%] rounded-full blur-[128px] opacity-[0.8] rellax"
+        data-rellax-xs-speed="3"
+        data-rellax-mobile-speed="3"
+        data-rellax-desktop-speed="7"
+      ></div>
       <div
         class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px]"
       >
@@ -414,7 +430,13 @@
     </div>
 
     <!-- Recent Project -->
-    <div class="w-full mb-[120px]">
+    <div class="w-full mb-[120px] relative">
+      <div
+        class="absolute w-[200px] h-[200px] xl:w-[500px] 2xl:w-[600px] 2xl:h-[600px] xl:h-[500px] bg-blue-800 z-[-1] top-[25%] left-[-10%] -translate-x-[0%] -translate-y-[50%] rounded-full blur-[128px] opacity-[0.8] rellax"
+        data-rellax-xs-speed="3"
+        data-rellax-mobile-speed="3"
+        data-rellax-desktop-speed="8"
+      ></div>
       <div
         class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px]"
       >
@@ -540,7 +562,7 @@
               <img
                 src="./src/assets/icons/instagram.svg"
                 alt="instagram"
-                class="w-[33px] xl:w-[40px]"
+                class="w-[33px] xl:w-[48px]"
               />
             </a>
             <a href="#" class="cursor-none">
@@ -586,13 +608,14 @@
 
     <script src="./src/js/cursor1.js"></script>
     <script src="./src/js/scrollreveal.js"></script>
+    <script src="./src/js/navbar.js"></script>
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 
-    <!-- <script>
+    <script>
       var rellax = new Rellax('.rellax', {
         center: true,
       });
-    </script> -->
+    </script>
   </body>
 </html>

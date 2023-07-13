@@ -26,6 +26,18 @@ body {
     /* scroll-behavior: slow; */
 }
 
+@media screen and (max-width: 576px) {
+    /* nav {
+        background-color: #070c0f84 !important;
+        backdrop-filter: blur(75px) !important;
+    } */
+}
+
+.blurred {
+    background-color: #070c0f84 !important;
+    backdrop-filter: blur(75px) !important;
+}
+
 a, button {
     cursor: none;
 }

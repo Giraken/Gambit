@@ -47,7 +47,14 @@
     ></div>
 
     <!-- Navbar goes here -->
-    <nav class="bg-transparent border-gray-200">
+    <div
+      class="backbone h-[80px] xl:h-[76px] w-full bg-transparent absolute"
+      id="backbone"
+    ></div>
+    <nav
+      class="w-full top-0 left-0 z-20 relative transition duration-500 ease-in-out"
+      id="navbar"
+    >
       <div
         class="w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] flex flex-wrap items-center justify-between py-5 px-5 2xl:px-0"
       >
@@ -86,7 +93,7 @@
           id="navbar-default"
         >
           <ul
-            class="flex flex-col mt-4 text-xl font-medium tracking-widest uppercase md:p-0 bg-slate-800 md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0"
+            class="flex flex-col mt-4 text-xl font-medium tracking-widest uppercase md:p-0 bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0"
           >
             <li>
               <a
@@ -962,6 +969,7 @@
     <script src="src/js/pagination.js"></script>
     <script src="./src/js/cursor1.js"></script>
     <script src="./src/js/scrollreveal.js"></script>
+    <script src="./src/js/navbar.js"></script>
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 
