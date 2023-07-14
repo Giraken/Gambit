@@ -1142,6 +1142,22 @@ input:checked + .toggle-bg {
   top: 50%;
 }
 
+.top-\[5\%\] {
+  top: 5%;
+}
+
+.left-\[10\%\] {
+  left: 10%;
+}
+
+.left-\[11\%\] {
+  left: 11%;
+}
+
+.left-\[13\%\] {
+  left: 13%;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -1446,6 +1462,10 @@ input:checked + .toggle-bg {
   height: 100%;
 }
 
+.h-\[550px\] {
+  height: 550px;
+}
+
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -1528,6 +1548,10 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[550px\] {
+  width: 550px;
 }
 
 .max-w-xl {
@@ -2477,6 +2501,14 @@ input:checked + .toggle-bg {
   opacity: 1;
 }
 
+.opacity-70 {
+  opacity: 0.7;
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -2520,6 +2552,11 @@ input:checked + .toggle-bg {
 
 .blur-\[96px\] {
   --tw-blur: blur(96px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-\[64px\] {
+  --tw-blur: blur(64px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -3044,6 +3081,50 @@ a, button {
     top: 35%;
   }
 
+  .xl\:top-\[5\%\] {
+    top: 5%;
+  }
+
+  .xl\:left-\[5\%\] {
+    left: 5%;
+  }
+
+  .xl\:top-\[15\%\] {
+    top: 15%;
+  }
+
+  .xl\:top-\[10\%\] {
+    top: 10%;
+  }
+
+  .xl\:top-\[8\%\] {
+    top: 8%;
+  }
+
+  .xl\:left-\[40\%\] {
+    left: 40%;
+  }
+
+  .xl\:left-\[0\%\] {
+    left: 0%;
+  }
+
+  .xl\:left-\[50\%\] {
+    left: 50%;
+  }
+
+  .xl\:left-\[35\%\] {
+    left: 35%;
+  }
+
+  .xl\:left-\[30\%\] {
+    left: 30%;
+  }
+
+  .xl\:top-\[30\%\] {
+    top: 30%;
+  }
+
   .xl\:order-last {
     order: 9999;
   }
@@ -3213,6 +3294,11 @@ a, button {
     padding-right: 300px;
   }
 
+  .xl\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .xl\:pt-10 {
     padding-top: 2.5rem;
   }
@@ -3295,11 +3381,29 @@ a, button {
     --tw-blur: blur(156px);
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
+
+  .xl\:blur-\[186px\] {
+    --tw-blur: blur(186px);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
+  .xl\:blur-\[200px\] {
+    --tw-blur: blur(200px);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
 }
 
 @media (min-width: 1536px) {
   .\32xl\:bottom-\[-350px\] {
     bottom: -350px;
+  }
+
+  .\32xl\:top-\[40\%\] {
+    top: 40%;
+  }
+
+  .\32xl\:top-\[35\%\] {
+    top: 35%;
   }
 
   .\32xl\:h-\[250px\] {

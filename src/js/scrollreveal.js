@@ -60,3 +60,39 @@ ScrollReveal().reveal('.recent-projects', {
   duration: 1000,
   distance: '80px',
 });
+
+ScrollReveal().reveal('.head1', {
+  interval: 300,
+  reset: false,
+  delay: 200,
+  origin: 'bottom',
+  duration: 1000,
+  distance: '80px',
+});
+
+ScrollReveal().reveal('.head2', {
+  interval: 300,
+  reset: false,
+  delay: 400,
+  origin: 'bottom',
+  duration: 1000,
+  distance: '80px',
+});
+
+ScrollReveal().reveal('.content-tabs', {
+  interval: 300,
+  reset: false,
+  delay: 600,
+  origin: 'bottom',
+  duration: 1000,
+  distance: '80px',
+});
+
+ScrollReveal().reveal('.main-content', {
+  interval: 300,
+  reset: false,
+  delay: 1000,
+  origin: 'bottom',
+  duration: 1000,
+  distance: '80px',
+});
