@@ -126,9 +126,9 @@
       </nav>
 
       <!-- Hero goes here -->
-      <section class="w-full min-h-[50vh] md:min-h-[90vh] mb-40">
-        <div class="w-full min-h-[100vh] text-center relative flex-col justify-center overflow-x-hidden grid grid-cols-2 md:grid-cols-2 gap 4">
-          <div class="justify-center w-full mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] relative grid grid-cols-3 text-center items-center mb-40">
+      <section class="w-full min-h-[50vh] md:min-h-[90vh] mb-40 p-5 xl:p-32">
+        <div class="w-full min-h-[100vh] relative flex-col justify-end overflow-x-hidden grid grid-cols-1 lg:grid-cols-2 gap-3 mx-auto">
+          <div class="justify-center w-[330px] mx-auto lg:max-w-[1150px] 2xl:max-w-[1366px] relative items-center mb-40 sm:w-[475px] xl:w-[570px]">
             <div class="col-span-2">
               <h1 class="font-inter font-medium text-white text-[34px] sm:text-[68px] xl:text-[32px] 2xl:text-[65px] drop-shadow-xl shadow-white text-left">
                 Let's start a <br>
@@ -138,38 +138,56 @@
               </h1>
 
               <form>
-                <div class="mb-6 text-left">
-                  <p class="text-3xl font-medium leading-normal text-white ">What's your name?</p>
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"></label>
-                    <input type="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John Doe*" required>
+                <div class="mb-6 text-left border-b-2 border-white pt-14 pb-14">
+                  <label class="font-medium leading-normal text-white sm:text-[35px] xl:text-[20px] 2xl:text-3xl" for="name">What's your name</label>
+                  <input type="text" id="name" class="w-full text-[#A7A7A7] bg-transparent border-none mb-7 sm:text-[35px] xl:text-[20px] 2xl:text-3xl" placeholder="John Doe*" required> 
                 </div>
-                <div class="mb-6 text-left">
-                  <p class="text-3xl font-medium leading-normal text-white">What's your email</p>
-                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
-                  <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="john@doe.com*" required>
+                <div class="mb-6 text-left border-b-2 border-white pt-14 pb-14">
+                  <label class="font-medium leading-normal text-white sm:text-[35px] xl:text-[20px] 2xl:text-3xl" for="email">What's your email?</label>
+                  <input type="email" id="email" class="w-full text-[#A7A7A7] bg-transparent border-none mb-7 sm:text-[35px] xl:text-[20px] 2xl:text-3xl" placeholder="john@doe.com*" required> 
                 </div>
-                <div class="mb-6 text-left">
-                  <p class="text-3xl font-medium leading-normal text-white">What's the name of your company</p>
-                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
-                  <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Gambit Studio" required>
+                <div class="mb-6 text-left border-b-2 border-white pt-14 pb-14">
+                  <label class="font-medium leading-normal text-white sm:text-[35px] xl:text-[20px] 2xl:text-3xl" for="company">What's the name of your company</label>
+                  <input type="text" id="company" class="w-full text-[#A7A7A7] bg-transparent border-none mb-7 sm:text-[35px] xl:text-[20px] 2xl:text-3xl" placeholder="Gambit Studio" required> 
                 </div>
-                <div class="mb-6 text-left">
-                  <p class="text-3xl font-medium leading-normal text-white">What can we help you with</p>
-                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
-                  <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Digital Marketing, Web Development, ..." required>
+                <div class="mb-6 text-left border-b-2 border-white pt-14 pb-14">
+                  <label class="font-medium leading-normal text-white sm:text-[35px] xl:text-[20px] 2xl:text-3xl" for="email">What can we help you with?</label>
+                  <input type="text" id="expertise" class="w-full text-[#A7A7A7] bg-transparent border-none mb-7 sm:text-[35px] xl:text-[20px] 2xl:text-3xl" placeholder="Digital Marketing, Web Development,..." required> 
                 </div>
-                <div class="mb-6 text-left">
-                  <p class="text-3xl font-medium leading-normal text-white">Tell us about the project?</p>
-                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
-                  <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Hello Gambit Rojo, we have ..." required>
+                <div class="mb-6 text-left border-b-2 border-white pt-14 pb-14">
+                  <label class="font-medium leading-normal text-white sm:text-[35px] xl:text-[20px] 2xl:text-3xl" for="email">Tell us about the project</label>
+                  <input type="text" id="clients-needs" class="w-full text-[#A7A7A7] bg-transparent border-none mb-7 sm:text-[35px] xl:text-[20px] 2xl:text-3xl" placeholder="Hello Gambit Rojo, we have ..." required> 
                 </div>
-              <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+              <button type="submit" class="text-left text-sm text-white  bg-gradient-to-r from-[#8CDBFF] to-[#00B0FF] pl-8 pr-8 pt-1 pb-1 sm:text-xl sm:pl-16 sm:pr-16 sm:pt-3 sm:pb-3">Submit</button>
             </form>
             </div>
           </div>
 
-          <div class="items-center justify-start w-full bg-transparent">
-            <img src="./src/assets/images/logo-3d-transparent.png" alt="logo-transparent" class="relative xl:w-[7vw]"/>
+          <div class="items-start justify-start mx-auto w-[350px]">
+            <div class="mb-[50px]">
+              <img src="./src/assets/images/logo-3d-transparent.png" alt="logo-transparent" class="relative w-24"/>
+            </div>
+
+            <div class="mb-8">
+              <ul>
+                <li class="text-base font-medium text-[#A7A7A7] sm:text-[35px] xl:text-[20px] 2xl:text-xl mb-0 sm:mb-4 xl:mb-1">Contact & Business</li>
+                <li class="text-xl font-medium text-white sm:text-[35px] xl:text-[20px] 2xl:text-xl mb-0 sm:mb-3 xl:mb-0">gambitrojo@gmail.com</li>
+                <li class="text-xl font-medium text-white sm:text-[35px] xl:text-[20px] 2xl:text-xl mb-0 sm:mb-3 xl:mb-0">+62 812 3456789</li>
+                <li class="text-xl font-medium text-white sm:text-[35px] xl:text-[20px] 2xl:text-xl mb-0 sm:mb-3 xl:mb-0">Jakarta, Indonesia</li>
+              </ul>
+            </div>
+
+            <div class="">
+              <ul class="justify-start">
+                <li class="text-base font-medium text-[#A7A7A7] sm:text-[35px] xl:text-[20px] 2xl:text-xl mb-0 sm:mb-4 xl:mb-1">Socials</li>
+                <li class="flex text-xl font-medium text-white sm:text-[35px] xl:text-[20px] 2xl:text-xl mb-0 sm:mb-3 xl:mb-0"><a href="#"><img src="./src/assets/icons/instagram.svg" alt="instagram"
+                  class="w-[28px] xl:w-[40px]"/> Instagram</a></li>
+                <li class="text-xl font-medium text-white sm:text-[35px] xl:text-[20px] 2xl:text-xl mb-0 sm:mb-3 xl:mb-0"><a href="#"><img src="./src/assets/icons/linkedin.svg" alt="linkedin"
+                  class="w-[28px] xl:w-[40px]"/> LinkedIn</a></li>
+                <li class="text-xl font-medium text-white sm:text-[35px] xl:text-[20px] 2xl:text-xl mb-0 sm:mb-3 xl:mb-0"><a href="#"><img src="./src/assets/icons/tiktok.svg" alt="tiktok"
+                   class="w-[28px] xl:w-[40px]"/> TikTok</li></a>
+              </ul>
+            </div>
           </div>
         </div>
 
