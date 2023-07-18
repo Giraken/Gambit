@@ -31,20 +31,30 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/kursor/dist/kursor.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
+    />
+
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script> -->
     <link rel="stylesheet" href="./dist/output.css" />
     <title>Gambit Rojo</title>
   </head>
 
   <body>
     <!-- Custom cursor -->
-    <div
+    <!-- <div
       id="cursor1"
-      class="hidden xl:block fixed w-[14px] h-[14px] bg-[#B5FBFF] rounded-full translate-x-[-50%] translate-y-[-50%] pointer-events-none z-50"
+      class="cursor1 hidden xl:block fixed w-[14px] h-[14px] rounded-full translate-x-[-50%] translate-y-[-50%] pointer-events-none z-[10000]"
     ></div>
     <div
       id="cursor2"
       class="hidden xl:block fixed w-[52px] h-[52px] border-[#258287] border rounded-full translate-x-[-50%] translate-y-[-50%] duration-700 ease-out bg-transparent z-50 pointer-events-none"
-    ></div>
+    ></div> -->
 
     <div class="relative w-full">
       <div
@@ -248,7 +258,7 @@
     <!-- About 2 goes here -->
     <div class="relative overflow-visible">
       <div
-        class="w-full mx-auto container bg-[#070C0F] rellax mb-[650px] xl:mb-48 relative"
+        class="w-full mx-auto container bg-[#1C1D20] rellax mb-[650px] xl:mb-48 relative"
         data-rellax-xs-speed="3"
         data-rellax-mobile-speed="3"
         data-rellax-desktop-speed="10"
@@ -464,7 +474,7 @@
               <img
                 src="./src/assets/icons/instagram.svg"
                 alt="instagram"
-                class="w-[33px] xl:w-[48px]"
+                class="w-[28px] xl:w-[40px]"
               />
             </a>
             <a href="#" class="cursor-none">
@@ -508,6 +518,7 @@
     </script>
     <!--End of Tawk.to Script-->
 
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
     <script src="./src/js/cursor1.js"></script>
     <script src="./src/js/scrollreveal.js"></script>
     <script src="./src/js/navbar.js"></script>
@@ -515,9 +526,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script>
+      var cursor = new MouseFollower();
+    </script> -->
+
     <script>
       var rellax = new Rellax('.rellax', {
         center: true,
+      });
+    </script>
+
+    <script>
+      new kursor({
+        type: 4,
+        removeDefaultCursor: true,
+        color: '#B5FBFF',
       });
     </script>
   </body>

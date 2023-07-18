@@ -31,20 +31,24 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/kursor/dist/kursor.css"
+    />
     <link rel="stylesheet" href="./dist/output.css" />
     <title>Expertise | Gambit Rojo</title>
   </head>
 
   <body>
     <!-- Custom cursor -->
-    <div
+    <!-- <div
       id="cursor1"
       class="hidden xl:block fixed w-[14px] h-[14px] bg-[#B5FBFF] rounded-full translate-x-[-50%] translate-y-[-50%] pointer-events-none z-50"
     ></div>
     <div
       id="cursor2"
       class="hidden xl:block fixed w-[52px] h-[52px] border-[#258287] border rounded-full translate-x-[-50%] translate-y-[-50%] duration-700 ease-out bg-transparent z-50 pointer-events-none"
-    ></div>
+    ></div> -->
 
     <div class="relative w-full">
       <div
@@ -567,7 +571,7 @@
               <img
                 src="./src/assets/icons/instagram.svg"
                 alt="instagram"
-                class="w-[33px] xl:w-[48px]"
+                class="w-[28px] xl:w-[40px]"
               />
             </a>
             <a href="#" class="cursor-none">
@@ -611,6 +615,7 @@
     </script>
     <!--End of Tawk.to Script-->
 
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
     <script src="./src/js/cursor1.js"></script>
     <script src="./src/js/scrollreveal.js"></script>
     <script src="./src/js/navbar.js"></script>
@@ -621,6 +626,14 @@
     <script>
       var rellax = new Rellax('.rellax', {
         center: true,
+      });
+    </script>
+
+    <script>
+      new kursor({
+        type: 4,
+        removeDefaultCursor: true,
+        color: '#B5FBFF',
       });
     </script>
   </body>

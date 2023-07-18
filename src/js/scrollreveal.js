@@ -96,3 +96,12 @@ ScrollReveal().reveal('.main-content', {
   duration: 1000,
   distance: '80px',
 });
+
+ScrollReveal().reveal('.form-box', {
+  interval: 200,
+  reset: false,
+  delay: 200,
+  origin: 'bottom',
+  duration: 1000,
+  distance: '80px',
+});
