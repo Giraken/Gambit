@@ -1,6 +1,6 @@
 ScrollReveal().reveal('.hero-item', {
   interval: 100,
-  reset: false,
+  reset: true,
   delay: 300,
   origin: 'bottom',
   duration: 1000,
@@ -9,7 +9,7 @@ ScrollReveal().reveal('.hero-item', {
 
 ScrollReveal().reveal('.hero-item2', {
   interval: 100,
-  reset: false,
+  reset: true,
   delay: 700,
   origin: 'bottom',
   duration: 1000,
@@ -18,7 +18,7 @@ ScrollReveal().reveal('.hero-item2', {
 
 ScrollReveal().reveal('.about-first', {
   interval: 300,
-  reset: false,
+  reset: true,
   delay: 500,
   origin: 'bottom',
   duration: 1000,
@@ -27,7 +27,7 @@ ScrollReveal().reveal('.about-first', {
 
 ScrollReveal().reveal('.why-us', {
   interval: 300,
-  reset: false,
+  reset: true,
   delay: 500,
   origin: 'bottom',
   duration: 1000,
@@ -45,7 +45,7 @@ ScrollReveal().reveal('.accordion', {
 
 ScrollReveal().reveal('.recent-projects-title', {
   interval: 300,
-  reset: false,
+  reset: true,
   delay: 500,
   origin: 'bottom',
   duration: 1000,
@@ -54,7 +54,7 @@ ScrollReveal().reveal('.recent-projects-title', {
 
 ScrollReveal().reveal('.recent-projects', {
   interval: 300,
-  reset: false,
+  reset: true,
   delay: 500,
   origin: 'bottom',
   duration: 1000,
