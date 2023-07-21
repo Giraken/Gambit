@@ -35,30 +35,19 @@
       rel="stylesheet"
       href="https://unpkg.com/kursor/dist/kursor.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-    <!-- <link
+    <link
       rel="stylesheet"
-      href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script> -->
     <link rel="stylesheet" href="./dist/output.css" />
-    <link rel="stylesheet" href="src/about-us.css">
+    <link rel="stylesheet" href="src/about-us.css" />
     <title>Gambit Rojo</title>
   </head>
 
   <body>
-    <!-- Custom cursor -->
-    <!-- <div
-      id="cursor1"
-      class="cursor1 hidden xl:block fixed w-[14px] h-[14px] rounded-full translate-x-[-50%] translate-y-[-50%] pointer-events-none z-[10000]"
-    ></div>
-    <div
-      id="cursor2"
-      class="hidden xl:block fixed w-[52px] h-[52px] border-[#258287] border rounded-full translate-x-[-50%] translate-y-[-50%] duration-700 ease-out bg-transparent z-50 pointer-events-none"
-    ></div> -->
-
     <div class="relative w-full">
       <!-- Navbar goes here -->
       <div
@@ -153,121 +142,336 @@
     </div>
 
     <!-- Description-->
-    <div class="top-0 bottom-0 left-0 right-0 w-full">
+    <div
+      class="w-full lg:max-w-[1150px] 2xl:max-w-[1366px] mx-auto px-5 2xl:px-0 overflow-visible"
+    >
       <div class="relative w-full opacity-100">
         <div class="relative bottom-0 left-0 h-full">
-          <div class="content relative flex items-start justify-center w-full min-h-[100vh] overflow-hidden">
-            <div class="container flex flex-col items-center justify-center w-full pt-4">
-              <div class="relative w-full mb-56 text-[34px] sm:text-[68px] xl:text-[64px] 2xl:text-5xl">
-                <h1 class="font-semibold text-white">
-                  Welcome to <br>
-                  <span class="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF]">Gambit </span>
-                  Rojo <br>Digital
+          <div
+            class="content relative flex items-start justify-center w-full min-h-[100vh] overflow-visible"
+          >
+            <div
+              class="container flex flex-col items-center justify-center w-full pt-4 relative"
+            >
+              <div
+                class="absolute w-[300px] h-[300px] xl:w-[600px] 2xl:w-[1000px] 2xl:h-[1000px] xl:h-[600px] bg-blue-800 z-[-1] top-[0%] left-[0%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[180px] opacity-[1]"
+              ></div>
+              <div
+                class="relative w-full mb-56 text-[42px] sm:text-[68px] xl:text-[72px] 2xl:text-[102px] leading-normal hero-item"
+              >
+                <h1
+                  class="font-semibold font-outfit text-white leading-[1.2] drop-shadow-lg"
+                >
+                  Welcome to <br />
+                  <span
+                    class="font-semibold font-outfit text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF]"
+                    >Gambit
+                  </span>
+                  Rojo <br />Digital
                 </h1>
               </div>
-              <div class="absolute top-0 left-0 w-full h-full z-[-1]">
-                <div class="hero-bg-img absolute top-[40%] left-[50%]">
-                  <img src="src/assets/images/about.png" alt="background" class="h-auto max-w-full hero-bg-img-main"
+              <div
+                class="absolute top-0 xl:top-[10%] left-0 w-full h-full z-[-1] opacity-70 rellax"
+                data-rellax-speed="-10"
+                data-rellax-mobile-speed="-7"
+                data-rellax-desktop-speed="-7"
+              >
+                <div
+                  class="hero-bg-img relative w-full overflow-hidden h-[320px] xl:h-[720px] 2xl:h-[960px] top-[40%] left-[50%]"
+                >
+                  <div
+                    class="absolute top-0 left-0 right-0 bottom-0 bg-[#005982] opacity-50 hover:opacity-0 transition duration-300"
+                  ></div>
+                  <img
+                    src="src/assets/images/about.png"
+                    alt="background"
+                    class="w-full hero-bg-img-main object-cover object-center"
                   />
                 </div>
               </div>
-              <div class="self-end mb-56 leading-[1.5] text-white hero-text text-[20px] sm:text-[25px] xl:text-[25px] 2xl:text-3xl">
-                Where strategy meets creativity and the art of branding 
-                takes center stage. We approach every branding challenge 
-                with strategic thinking and calculated moves.. precisely.. 
-                foresightly..
+              <div
+                class="absolute w-[200px] h-[200px] xl:w-[400px] 2xl:w-[600px] 2xl:h-[600px] xl:h-[400px] bg-[#00B0FF] z-[-1] top-[40%] right-[0%] 2xl:right-[-20%] -translate-x-[0%] -translate-y-[50%] rounded-full blur-[180px] opacity-[1] xl:opacity-70 2xl:blur-[192px]"
+              ></div>
+              <div
+                class="relative self-end mb-56 font-inter font-medium leading-[1.5] text-white hero-text text-[20px] sm:text-[25px] xl:text-[25px] 2xl:text-3xl drop-shadow-lg rellax"
+                data-rellax-speed="2.5"
+                data-rellax-mobile-speed="-3"
+                data-rellax-desktop-speed="3"
+              >
+                Where strategy meets creativity and the art of
+                branding takes center stage.
+                <span class="text-[#A7A7A7]"
+                  >We approach every branding challenge with strategic
+                  thinking and calculated moves.. precisely..
+                  foresightly..</span
+                >
               </div>
-              <div class="relative self-start mb-56 text-3xl text-white hero-text text-[20px] sm:text-[25px] xl:text-[25px] 2xl:text-3xl">
-                At Gambit Rojo, we believe that a successful brand is 
-                like a well-executed chess game—a >harmonious blend of 
-                analysis, positioning, and creativity. 
+              <div
+                class="absolute w-[300px] h-[300px] xl:w-[600px] 2xl:w-[1000px] 2xl:h-[1000px] xl:h-[600px] bg-blue-800 z-[-1] top-[60%] 2xl:top-[80%] 2xl:left-[-25%] left-[0%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[180px] opacity-[1] xl:opacity-60"
+              ></div>
+              <div
+                class="relative self-start mb-56 text-3xl text-white hero-text text-[20px] sm:text-[25px] xl:text-[25px] 2xl:text-3xl font-inter font-medium drop-shadow-lg rellax"
+                data-rellax-speed="2.5"
+                data-rellax-mobile-speed="-3"
+                data-rellax-desktop-speed="3"
+              >
+                At Gambit Rojo, we believe that a successful brand is
+                like a well-executed chess game -
+                <span class="text-[#A7A7A7]"
+                  >a harmonious blend of analysis, positioning, and
+                  creativity.</span
+                >
               </div>
-              <div class="self-end text-white leading-[1.5] hero-text text-[20px] sm:text-[25px] xl:text-[25px] 2xl:text-3xl">
-                We understand that 
-                branding is not just about aesthetics nor beautiful design.. 
-                it's about creating a powerful identity that captures attention, 
-                engages audiences, and builds lasting connections.
+              <div
+                class="absolute w-[200px] h-[200px] xl:w-[600px] 2xl:w-[600px] 2xl:h-[600px] xl:h-[600px] bg-[#00B0FF] z-[-1] top-[90%] 2xl:top-[100%] right-[0%] -translate-x-[0%] -translate-y-[50%] rounded-full blur-[180px] opacity-[1] xl:opacity-50 2xl:blur-[192px]"
+              ></div>
+              <div
+                class="self-end text-white leading-[1.5] hero-text text-[20px] sm:text-[25px] xl:text-[25px] 2xl:text-3xl font-inter font-medium drop-shadow-lg relative rellax"
+                data-rellax-speed="2.5"
+                data-rellax-mobile-speed="-3"
+                data-rellax-desktop-speed="3"
+              >
+                We understand that branding is not just about
+                aesthetics nor beautiful design..
+                <span class="text-[#A7A7A7]"
+                  >it's about creating a powerful identity that
+                  captures attention, engages audiences, and builds
+                  lasting connections.</span
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
+
     <!-- Content 2 -->
-    <div class="container max-w-6xl mx-auto mb-56">
-      <div class="mb-24 max-md:mb-12">
-        <h1 class="p-4 text-center max-md:text-left text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] max-md:text-4xl">
-          Here’s our reliable troop
+    <div
+      class="w-full lg:max-w-[1150px] 2xl:max-w-[1366px] mx-auto px-5 xl:px-28 2xl:px-28 mb-56 2xl:mb-96 main-content"
+    >
+      <div class="mb-24 max-md:mb-12 w-full">
+        <h1
+          class="p-0 text-center max-md:text-left text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF] max-md:text-4xl font-outfit font-semibold mb-3"
+        >
+          Here`s our reliable troop
         </h1>
-        <p class="p-4 text-2xl text-center text-white max-md:text-lg max-md:text-left">In the arena of business, marketing becomes the battlefield, where strategies clash, campaigns engage, and brands conquer. It requires a bunch of troop to achieve that.</p>
+        <p
+          class="p-0 text-2xl text-center text-white max-md:text-lg max-md:text-left font-inter"
+        >
+          In the arena of business, marketing becomes the battlefield,
+          where strategies clash, campaigns engage, and brands
+          conquer. It requires a bunch of troop to achieve that.
+        </p>
       </div>
-      
-      <div class="max-w-[640px] items-center mx-auto mb-24 lg:max-w-[900px] lg:mx-auto md:max-w-[750px] max-sm:max-w-[400px] max-sm:mb-4">
-        <ul class="relative flex flex-wrap mb-8 max-sm:grid max-sm:grid-cols-5 max-sm:p-4 max-sm:gap-4" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
-            <li role="presentation">
-                <button class="h-auto w-32 aria-selected:text-[#00B0FF] lg:w-44 md:w-36 max-sm:w-auto" id="tech-tab" data-tabs-target="#tech" type="button" role="tab" aria-controls="tech" aria-selected="false">             
-                  <i class="relative block h-auto m-auto mb-10 fa-solid fa-microchip fa-2xl max-md:fa-xl"></i>
-                  <p class="relative pt-4 mb-0 border-t-4 border-inherit lg:text-2xl md:text-lg max-sm:hidden">
-                    Technologies <br> Troop
-                  </p>
-                </button>
-            </li> 
-            <li role="presentation">
-                <button class="h-auto w-32 aria-selected:text-[#00B0FF] lg:w-44 md:w-36 max-sm:w-auto" id="tactical-tab" data-tabs-target="#tactical" type="button" role="tab" aria-controls="tactical" aria-selected="false">
-                  <i class="relative block h-auto m-auto mb-10 fa-solid fa-bullseye fa-2xl max-md:fa-xl"></i>
-                  <p class="relative pt-4 mb-0 border-t-4 text-md border-inherit lg:text-2xl max-sm:hidden">
-                    Tactical <br>Troop
-                  </p>
-                </button>
-            </li>
-            <li role="presentation">
-              <button class="h-auto w-32 aria-selected:text-[#00B0FF] lg:w-44 md:w-36 max-sm:w-auto" id="visual-tab" data-tabs-target="#visual" type="button" role="tab" aria-controls="visual" aria-selected="false">
-                <i class="relative block h-auto m-auto mb-10 fa-solid fa-eye fa-2xl max-md:fa-xl"></i>
-                <p class="relative pt-4 mb-0 border-t-4 text-md border-inherit lg:text-2xl max-sm:hidden">
-                  Visual <br>Troop
-                </p>
-              </button>
-            </li>
-            <li role="presentation">
-              <button class="h-auto w-32 aria-selected:text-[#00B0FF] lg:w-44 md:w-36 max-sm:w-auto" id="analytic-tab" data-tabs-target="#analytic" type="button" role="tab" aria-controls="analytic" aria-selected="false">
-                <i class="relative block h-auto m-auto mb-10 fa-solid fa-chart-line fa-2xl max-md:fa-xl"></i>
-                <p class="relative pt-4 mb-0 border-t-4 text-md border-inherit lg:text-2xl max-sm:hidden">
-                  Analytic <br>Troop
-                </p>
-              </button>
-            </li> 
-            <li role="presentation">
-              <button class="h-auto w-32 aria-selected:text-[#00B0FF] lg:w-44 md:w-36 max-sm:w-auto" id="content-tab" data-tabs-target="#content" type="button" role="tab" aria-controls="content" aria-selected="false">
-                <i class="relative block h-auto m-auto mb-10 fa-solid fa-file-signature fa-2xl max-md:fa-xl"></i>
-                <p class="relative pt-4 mb-0 border-t-4 text-md border-inherit lg:text-2xl max-sm:hidden">
-                  Content <br>Troop
-                </p>
-              </button>
+
+      <div
+        class="max-w-[640px] items-center mx-auto mb-24 lg:max-w-[900px] lg:mx-auto md:max-w-[750px] max-sm:max-w-[400px] max-sm:mb-4"
+      >
+        <ul
+          class="relative flex flex-wrap mb-8 max-sm:grid max-sm:grid-cols-5 max-sm:p-4 max-sm:gap-4"
+          id="myTab"
+          data-tabs-toggle="#myTabContent"
+          role="tablist"
+        >
+          <li role="presentation">
+            <button
+              class="h-auto w-32 aria-selected:text-[#00B0FF] lg:w-44 md:w-36 max-sm:w-auto"
+              id="tech-tab"
+              data-tabs-target="#tech"
+              type="button"
+              role="tab"
+              aria-controls="tech"
+              aria-selected="false"
+            >
+              <i
+                class="relative block h-auto m-auto mb-10 fa-solid fa-microchip fa-2xl max-md:fa-xl"
+              ></i>
+              <p
+                class="relative pt-4 mb-0 border-t-4 border-inherit lg:text-2xl md:text-lg max-sm:hidden"
+              >
+                Technologies <br />
+                Troop
+              </p>
+            </button>
+          </li>
+          <li role="presentation">
+            <button
+              class="h-auto w-32 aria-selected:text-[#00B0FF] lg:w-44 md:w-36 max-sm:w-auto"
+              id="tactical-tab"
+              data-tabs-target="#tactical"
+              type="button"
+              role="tab"
+              aria-controls="tactical"
+              aria-selected="false"
+            >
+              <i
+                class="relative block h-auto m-auto mb-10 fa-solid fa-bullseye fa-2xl max-md:fa-xl"
+              ></i>
+              <p
+                class="relative pt-4 mb-0 border-t-4 text-md border-inherit lg:text-2xl max-sm:hidden"
+              >
+                Tactical <br />Troop
+              </p>
+            </button>
+          </li>
+          <li role="presentation">
+            <button
+              class="h-auto w-32 aria-selected:text-[#00B0FF] lg:w-44 md:w-36 max-sm:w-auto"
+              id="visual-tab"
+              data-tabs-target="#visual"
+              type="button"
+              role="tab"
+              aria-controls="visual"
+              aria-selected="false"
+            >
+              <i
+                class="relative block h-auto m-auto mb-10 fa-solid fa-eye fa-2xl max-md:fa-xl"
+              ></i>
+              <p
+                class="relative pt-4 mb-0 border-t-4 text-md border-inherit lg:text-2xl max-sm:hidden"
+              >
+                Visual <br />Troop
+              </p>
+            </button>
+          </li>
+          <li role="presentation">
+            <button
+              class="h-auto w-32 aria-selected:text-[#00B0FF] lg:w-44 md:w-36 max-sm:w-auto"
+              id="analytic-tab"
+              data-tabs-target="#analytic"
+              type="button"
+              role="tab"
+              aria-controls="analytic"
+              aria-selected="false"
+            >
+              <i
+                class="relative block h-auto m-auto mb-10 fa-solid fa-chart-line fa-2xl max-md:fa-xl"
+              ></i>
+              <p
+                class="relative pt-4 mb-0 border-t-4 text-md border-inherit lg:text-2xl max-sm:hidden"
+              >
+                Analytic <br />Troop
+              </p>
+            </button>
+          </li>
+          <li role="presentation">
+            <button
+              class="h-auto w-32 aria-selected:text-[#00B0FF] lg:w-44 md:w-36 max-sm:w-auto"
+              id="content-tab"
+              data-tabs-target="#content"
+              type="button"
+              role="tab"
+              aria-controls="content"
+              aria-selected="false"
+            >
+              <i
+                class="relative block h-auto m-auto mb-10 fa-solid fa-file-signature fa-2xl max-md:fa-xl"
+              ></i>
+              <p
+                class="relative pt-4 mb-0 border-t-4 text-md border-inherit lg:text-2xl max-sm:hidden"
+              >
+                Content <br />Troop
+              </p>
+            </button>
           </li>
         </ul>
       </div>
-      <div id="myTabContent" class="items-center w-7/12 mx-auto max-sm:w-10/12">
-        <div class="hidden p-8 bg-[#070C0F] rounded-lg shadow-lg shadow-[#00B0FF]" id="tech" role="tabpanel" aria-labelledby="tech-tab">
-          <h1 class="text-[#00AFFF] text-xl font-bold lg:text-3xl">Technologies Troop</h1><br>
-          <p class="text-lg text-white lg:text-2xl">They specialize on embracing the digital realm's potential to create immersive brand experiences trough system, programming, and many more.</p>
+      <div
+        id="myTabContent"
+        class="items-center w-7/12 mx-auto max-sm:w-10/12"
+      >
+        <div
+          class="hidden p-8 bg-[#1C1D20] shadow-lg shadow-[#00B0FF]"
+          id="tech"
+          role="tabpanel"
+          aria-labelledby="tech-tab"
+        >
+          <h1
+            class="text-[#00AFFF] font-outfit text-xl font-bold lg:text-3xl"
+          >
+            Technologies Troop
+          </h1>
+          <br />
+          <p class="text-lg text-white lg:text-xl font-inter">
+            They specialize on embracing the digital realm's potential
+            to create immersive brand experiences trough system,
+            programming, and many more.
+          </p>
         </div>
-        <div class="hidden p-8 bg-[#070C0F] rounded-lg shadow-lg shadow-[#00B0FF]" id="tactical" role="tabpanel" aria-labelledby="tactical-tab">
-          <h1 class="text-[#00AFFF] text-xl font-bold lg:text-3xl">Tactical Troop</h1><br>
-          <p class="text-lg text-white lg:text-2xl">Their objective is to deploy intelligent and innovative branding strategies that captivate audiences, plan and execute campaigns that leave a lasting impact on the market.</p>
+        <div
+          class="hidden p-8 bg-[#1C1D20] shadow-lg shadow-[#00B0FF]"
+          id="tactical"
+          role="tabpanel"
+          aria-labelledby="tactical-tab"
+        >
+          <h1
+            class="text-[#00AFFF] text-xl font-bold lg:text-3xl font-outfit"
+          >
+            Tactical Troop
+          </h1>
+          <br />
+          <p class="text-lg text-white lg:text-xl font-inter">
+            Their objective is to deploy intelligent and innovative
+            branding strategies that captivate audiences, plan and
+            execute campaigns that leave a lasting impact on the
+            market.
+          </p>
         </div>
-        <div class="hidden p-8 bg-[#070C0F] rounded-lg shadow-lg shadow-[#00B0FF]" id="visual" role="tabpanel" aria-labelledby="visual-tab">
-          <h1 class="text-[#00AFFF] text-xl font-bold lg:text-3xl">Visual Troop</h1><br>
-          <p class="text-lg text-white lg:text-2xl">Creative soul with an unyielding passion for design and visual expression, with their artistic minds they are ready to push the boundaries of design and deliver impactful experiences to clients</p>
+        <div
+          class="hidden p-8 bg-[#1C1D20] shadow-lg shadow-[#00B0FF]"
+          id="visual"
+          role="tabpanel"
+          aria-labelledby="visual-tab"
+        >
+          <h1
+            class="text-[#00AFFF] text-xl font-bold lg:text-3xl font-outfit"
+          >
+            Visual Troop
+          </h1>
+          <br />
+          <p class="text-lg text-white lg:text-xl font-inter">
+            Creative soul with an unyielding passion for design and
+            visual expression, with their artistic minds they are
+            ready to push the boundaries of design and deliver
+            impactful experiences to clients
+          </p>
         </div>
-        <div class="hidden p-8 bg-[#070C0F] rounded-lg shadow-lg shadow-[#00B0FF]" id="analytic" role="tabpanel" aria-labelledby="analytic-tab">
-          <h1 class="text-[#00AFFF] text-xl font-bold lg:text-3xl">Analytic Troop</h1><br>
-          <p class="text-lg text-white lg:text-2xl">They armed with cutting-edge tools and expertise to unravel the mysteries of digital data and transform them into actionable insights</p>
+        <div
+          class="hidden p-8 bg-[#1C1D20] shadow-lg shadow-[#00B0FF]"
+          id="analytic"
+          role="tabpanel"
+          aria-labelledby="analytic-tab"
+        >
+          <h1
+            class="text-[#00AFFF] text-xl font-bold lg:text-3xl font-outfit"
+          >
+            Analytic Troop
+          </h1>
+          <br />
+          <p class="text-lg text-white lg:text-xl font-inter">
+            They armed with cutting-edge tools and expertise to
+            unravel the mysteries of digital data and transform them
+            into actionable insights
+          </p>
         </div>
-        <div class="hidden p-8 bg-[#070C0F] rounded-lg shadow-lg shadow-[#00B0FF]" id="content" role="tabpanel" aria-labelledby="content-tab">
-          <h1 class="text-[#00AFFF] text-xl font-bold lg:text-3xl">Content Troop</h1><br>
-          <p class="text-lg text-white lg:text-2xl">Our team members are not only wordsmiths but also keen observers of industry trends, ensuring our content stays relevant and aligned with the latest market developments</p>
-      </div>
+        <div
+          class="hidden p-8 bg-[#1C1D20] shadow-lg shadow-[#00B0FF]"
+          id="content"
+          role="tabpanel"
+          aria-labelledby="content-tab"
+        >
+          <h1
+            class="text-[#00AFFF] text-xl font-bold lg:text-3xl font-outfit"
+          >
+            Content Troop
+          </h1>
+          <br />
+          <p class="text-lg text-white lg:text-xl font-inter">
+            Our team members are not only wordsmiths but also keen
+            observers of industry trends, ensuring our content stays
+            relevant and aligned with the latest market developments
+          </p>
+        </div>
       </div>
     </div>
 
@@ -287,7 +491,7 @@
       >
         <div class="w-full xl:w-[45%] block xl:flex items-center">
           <h1
-            class="text-5xl font-bold text-white font-outfit xl:text-6xl"
+            class="text-[42px] font-bold text-white font-outfit xl:text-6xl"
           >
             Understanding
           </h1>
@@ -341,7 +545,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Start a project -->
     <section class="w-full mb-40 text-center">
       <a
@@ -434,18 +638,10 @@
     <!--End of Tawk.to Script-->
 
     <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
-    <script src="./src/js/cursor1.js"></script>
     <script src="./src/js/scrollreveal.js"></script>
     <script src="./src/js/navbar.js"></script>
-    <!-- <script src="./node_modules/flowbite/dist/flowbite.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-
-    <!-- 
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
-    <script>
-      var cursor = new MouseFollower();
-    </script> -->
 
     <script>
       var rellax = new Rellax('.rellax', {

@@ -51,10 +51,13 @@
     ></div> -->
 
     <div class="relative w-full">
-      <!-- <div
-        class="absolute w-[300px] h-[300px] xl:w-[500px] 2xl:w-[700px] 2xl:h-[700px] xl:h-[500px] bg-blue-600 z-[-1] top-[50%] left-[40%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[156px] opacity-[0.6]"
-      ></div>
       <div
+        class="absolute w-[250px] h-[250px] xl:w-[600px] 2xl:w-[700px] 2xl:h-[700px] xl:h-[600px] bg-blue-800 z-[-1] top-[10%] xl:top-[8%] 2xl:top-[16%] left-[0%] xl:left-[5%] -translate-x-[0%] -translate-y-[50%] rounded-full blur-[64px] xl:blur-[192px] opacity-[1] animate-pulse rellax"
+        data-rellax-xs-speed="3"
+        data-rellax-mobile-speed="8"
+        data-rellax-desktop-speed="10"
+      ></div>
+      <!-- <div
         class="absolute w-[200px] h-[200px] xl:w-[300px] 2xl:w-[400px] 2xl:h-[400px] xl:h-[300px] bg-teal-400 z-[-1] top-[50%] left-[65%] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[128px] opacity-[0.6]"
       ></div> -->
       <!-- Navbar goes here -->
@@ -116,6 +119,14 @@
               </li>
               <li>
                 <a
+                  href="/about-us.html"
+                  class="block py-2 pl-3 pr-4 font-normal text-white rounded md:bg-transparent md:p-0 cursor-none"
+                  aria-current="page"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
                   href="/expertise.html"
                   class="block py-2 pl-3 pr-4 font-normal text-white md:border-0 md:p-0 cursor-none md:bg-transparent"
                   >Expertise</a
@@ -145,7 +156,7 @@
         class="w-full min-h-[50vh] md:min-h-[90vh] mt-0 xl:mt-5 2xl:mt-40 mb-40 p-5 xl:p-32"
       >
         <div
-          class="w-full lg:max-w-[900px] 2xl:max-w-[1280px] min-h-[100vh] relative flex-col justify-end overflow-hidden grid grid-cols-1 lg:grid-cols-3 gap-16 2xl:gap-32 mx-auto"
+          class="w-full lg:max-w-[900px] 2xl:max-w-[1280px] min-h-[100vh] relative overflow-hidden grid grid-cols-1 lg:grid-cols-3 gap-16 2xl:gap-32 mx-auto"
         >
           <div
             class="relative items-center justify-center order-2 w-full col-span-2 mx-auto mb-40 form-box lg:order-1"
@@ -153,15 +164,19 @@
             <h1
               class="whitespace-nowrap hidden lg:block font-inter font-extralight text-white text-[34px] sm:text-[68px] xl:text-[72px] 2xl:text-[108px] drop-shadow-xl shadow-white text-left leading-[1] mb-14 xl:mb-32 2xl:mb-40"
             >
-              Unlock the <br>true potential <br />
+              Unlock the <br />true potential <br />
               <span
                 class="whitespace-nowrap font-outfit font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF]"
               >
-              of your brand.
+                of your brand.
               </span>
             </h1>
 
-            <form>
+            <form
+              action="https://formcarry.com/s/XoTPQ-2V9_"
+              method="POST"
+              accept-charset="UTF-8"
+            >
               <div
                 class="mb-0 text-left border-t-2 border-b-2 border-[#3F3F3F] py-10"
               >
@@ -173,6 +188,7 @@
                 <input
                   type="text"
                   id="name"
+                  name="nama"
                   class="font-inter w-full bg-transparent text-white border-none px-0 mb-0 sm:text-[35px] xl:text-[20px] 2xl:text-3xl focus:ring-0"
                   placeholder="John Doe*"
                   required
@@ -189,6 +205,7 @@
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   class="font-inter w-full text-white bg-transparent border-none px-0 mb-0 sm:text-[35px] xl:text-[20px] 2xl:text-3xl focus:ring-0"
                   placeholder="john@doe.com*"
                   required
@@ -205,6 +222,7 @@
                 <input
                   type="text"
                   id="company"
+                  name="company"
                   class="font-inter w-full text-[#A7A7A7] bg-transparent border-none px-0 mb-0 sm:text-[35px] xl:text-[20px] 2xl:text-3xl focus:ring-0"
                   placeholder="Gambit Studio*"
                   required
@@ -221,6 +239,7 @@
                 <input
                   type="text"
                   id="expertise"
+                  name="expertise"
                   class="font-inter w-full text-[#A7A7A7] bg-transparent border-none px-0 mb-0 sm:text-[35px] xl:text-[20px] 2xl:text-3xl focus:ring-0"
                   placeholder="Digital Marketing, Web Development, ..."
                   required
@@ -237,6 +256,7 @@
                 <textarea
                   rows="4"
                   id="clients-needs"
+                  name="clients-needs"
                   class="font-inter w-full text-[#A7A7A7] bg-transparent border-none px-0 mb-0 sm:text-[35px] xl:text-[20px] 2xl:text-3xl focus:ring-0"
                   placeholder="Hello Gambit Rojo, we have ..."
                 ></textarea>
@@ -251,7 +271,7 @@
           </div>
 
           <div
-            class="form-box flex flex-col items-start justify-start w-full order-1 lg:order-2 pt-0 xl:pt-[120px] 2xl:pt-[220px] overflow-hidden"
+            class="form-box flex flex-col items-start justify-start w-full order-1 lg:order-2 pt-[42px] xl:pt-[190px] 2xl:pt-[330px] overflow-visible xl:overflow-hidden"
           >
             <div class="flex flex-col items-start mb-10 lg:hidden">
               <div class="flex items-center gap-3 mb-[-16px]">
@@ -261,13 +281,13 @@
                   class="relative w-[56px]"
                 />
                 <h1
-                  class="whitespace-nowrap block lg:hidden font-inter font-extralight text-white text-[42px] sm:text-[68px] xl:text-[72px] 2xl:text-[65px] drop-shadow-xl shadow-white text-left leading-[1] mb-0"
+                  class="whitespace-nowrap block lg:hidden font-inter font-extralight text-white text-[36px] sm:text-[68px] xl:text-[72px] 2xl:text-[65px] drop-shadow-xl shadow-white text-left leading-[1] mb-0"
                 >
                   Let`s start a
                 </h1>
               </div>
               <span
-                class="text-[42px] whitespace-nowrap lg:whitespace-normal font-outfit font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF]"
+                class="text-[36px] whitespace-nowrap lg:whitespace-normal font-outfit font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#8CDBFF] via-[#00B0FF] to-[#0027AF]"
               >
                 project together.
               </span>

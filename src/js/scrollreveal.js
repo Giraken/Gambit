@@ -1,5 +1,5 @@
 ScrollReveal().reveal('.hero-item', {
-  interval: 100,
+  interval: 200,
   reset: false,
   delay: 300,
   origin: 'bottom',

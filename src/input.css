@@ -65,7 +65,7 @@ button:focus {
 }
 
 .text-bg {
-    animation: bg-animation 7.5s cubic-bezier(0.3, 0, 0.7, 1) infinite;
+    animation: bg-animation 15s cubic-bezier(0.3, 0, 0.7, 1) infinite;
 }
 
 .about-unique::after {
@@ -87,41 +87,20 @@ button:focus {
     background-color: #0088c6;
 }
 
-/* #cursor1 {
-    background: white;
-    background: linear-gradient(90deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(118, 9, 121, 1) 49%,
-        rgba(0, 212, 255, 1) 100%);
-    animation: follower 4s infinite;
+.section-strategic p {
+    color: #1C1D20;
+        font-weight: 900;
+        font-size: 96px;
+        text-shadow:
+            0px 0px 0 #767676,
+            -1px -1px 0 #767676,
+            1px -1px 0 #767676,
+            -1px 1px 0 #767676,
+            1px 1px 0 #767676;
+}
 
-    transition: 0s;
-    pointer-events: none;
-    mix-blend-mode: difference;
-} */
-
-/* .cursor1.active {
-    width: 100px !important;
-    height: 100px !important;
-} */
-
-/* nav:hover ~ #cursor1 {
-    transform: scale(5);
-} */
-
-/* @keyframes follower {
-    from {
-        background: rgb(2, 0, 36);
-        background: linear-gradient(90deg,
-                rgba(2, 0, 36, 1) 0%,
-                rgba(118, 9, 121, 1) 49%,
-                rgba(0, 212, 255, 1) 100%);
-    }
-
-    to {
-        background: rgb(171, 169, 4);
-        background: linear-gradient(90deg,
-                rgba(171, 169, 4, 1) 0%,
-                rgba(0, 255, 93, 1) 100%);
-    }
-} */
+@media screen and (min-width: 1280px) {
+    .section-strategic p {
+            font-size: 128px;
+        }
+}

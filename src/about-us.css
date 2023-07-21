@@ -1,16 +1,27 @@
 .content{
-    padding: 14rem 0 12rem;
+    padding: 7rem 0 12rem;
 }
-  
+
 .hero-bg-img {
     transform: translate(-50%, -50%);
-    max-width: min(53.125%, 1020px);
+    max-width: min(50%, 1020px);
 }
-  
-.hero-bg-img-main {
+
+@media screen and (max-width: 420px) {
+    .content{
+        padding: 3rem 0 12rem;
+    }
+
+    .hero-bg-img {
+        transform: translate(-50%, -50%);
+        max-width: min(80%, 1020px);
+    }
+}
+
+/* .hero-bg-img-main {
     transform: translate(0, 1.3rem);
-}
-  
+} */
+
 .hero-text {
     max-width: min(41rem, 100%);
 }
