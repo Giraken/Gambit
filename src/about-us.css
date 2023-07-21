@@ -1,0 +1,16 @@
+.content{
+    padding: 14rem 0 12rem;
+}
+  
+.hero-bg-img {
+    transform: translate(-50%, -50%);
+    max-width: min(53.125%, 1020px);
+}
+  
+.hero-bg-img-main {
+    transform: translate(0, 1.3rem);
+}
+  
+.hero-text {
+    max-width: min(41rem, 100%);
+}
