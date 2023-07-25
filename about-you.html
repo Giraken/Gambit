@@ -31,24 +31,36 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/kursor/dist/kursor.css"
-    />
+    /> -->
     <link rel="stylesheet" href="./dist/output.css" />
     <title>About You | Gambit Rojo</title>
   </head>
 
   <body>
     <!-- Custom cursor -->
-    <!-- <div
+    <div
       id="cursor1"
-      class="hidden xl:block fixed w-[14px] h-[14px] bg-[#B5FBFF] rounded-full translate-x-[-50%] translate-y-[-50%] pointer-events-none z-50"
-    ></div>
+      class="hidden xl:block fixed w-[24px] h-[24px] rounded-none translate-x-[-50%] translate-y-[-50%] pointer-events-none z-[10000] bg-transparent"
+    >
+      <img
+        src="/src/assets/icons/cursor1.svg"
+        alt="cursor"
+        class="absolute top-[47%] left-[47%]"
+      />
+    </div>
     <div
       id="cursor2"
-      class="hidden xl:block fixed w-[52px] h-[52px] border-[#258287] border rounded-full translate-x-[-50%] translate-y-[-50%] duration-700 ease-out bg-transparent z-50 pointer-events-none"
-    ></div> -->
+      class="hidden xl:block fixed w-[28px] h-[28px] border-none translate-x-[0%] translate-y-[0%] duration-300 ease-out bg-transparent z-50 pointer-events-none"
+    >
+      <img
+        src="/src/assets/icons/cursor2.svg"
+        alt="cursor"
+        class="absolute top-[50%] left-[50%]"
+      />
+    </div>
 
     <div class="relative w-full">
       <div
@@ -141,9 +153,9 @@
               </li>
               <li>
                 <a
-                  href="/about-you.html"
-                  class="block py-2 pl-3 pr-4 font-normal rounded md:border-0 md:p-0 cursor-none active"
-                  >About You</a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 font-normal text-white rounded md:border-0 md:p-0 cursor-none"
+                  >Career</a
                 >
               </li>
             </ul>
@@ -376,6 +388,72 @@
       </section>
     </div>
 
+    <!-- Sticky contact us -->
+    <div
+      class="w-[200px] h-14 fixed bottom-[45%] translate-y-[-50%] right-[-72px] bg-[#00B0FF] py-5 rotate-[-90deg] flex items-center"
+    >
+      <div class="relative overflow-hidden flex items-start">
+        <div
+          class="z-0 animate-marquee whitespace-nowrap flex gap-[36px]"
+        >
+          <p
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+          >
+            Contact Us
+          </p>
+          <p
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+          >
+            Contact Us
+          </p>
+          <p
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+          >
+            Contact Us
+          </p>
+          <p
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+          >
+            Contact Us
+          </p>
+          <p
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+          >
+            Contact Us
+          </p>
+        </div>
+        <div
+          class="absolute top-0 z-0 animate-marquee2 whitespace-nowrap overflow-hidden flex gap-[36px]"
+        >
+          <p
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+          >
+            Contact Us
+          </p>
+          <p
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+          >
+            Contact Us
+          </p>
+          <p
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+          >
+            Contact Us
+          </p>
+          <p
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+          >
+            Contact Us
+          </p>
+          <p
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+          >
+            Contact Us
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer goes here -->
     <footer class="w-full">
       <div
@@ -457,10 +535,10 @@
     </script>
     <!--End of Tawk.to Script-->
 
-    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
-    <script src="./src/js/cursor1.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script> -->
     <script src="./src/js/scrollreveal.js"></script>
     <script src="./src/js/navbar.js"></script>
+    <script src="./src/js/cursor1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 
@@ -470,12 +548,12 @@
       });
     </script>
 
-    <script>
+    <!-- <script>
       new kursor({
         type: 4,
         removeDefaultCursor: true,
         color: '#B5FBFF',
       });
-    </script>
+    </script> -->
   </body>
 </html>

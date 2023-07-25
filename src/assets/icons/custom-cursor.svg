@@ -1,3 +1,5 @@
-<svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="30" height="32" rx="15" fill="#B5FBFF"/>
+<svg width="92" height="94" viewBox="0 0 92 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="32.4749" y1="34.5251" x2="89.0434" y2="91.0937" stroke="#00B0FF" stroke-width="7"/>
+<line y1="3.5" x2="60" y2="3.5" stroke="white" stroke-width="7"/>
+<line x1="3.5" y1="7" x2="3.5" y2="67" stroke="white" stroke-width="7"/>
 </svg>
