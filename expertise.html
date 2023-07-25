@@ -31,6 +31,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css"
       rel="stylesheet"
     />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
     <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/kursor/dist/kursor.css"
@@ -48,12 +54,12 @@
       <img
         src="/src/assets/icons/cursor1.svg"
         alt="cursor"
-        class="absolute top-[47%] left-[47%]"
+        class="absolute top-[47%] left-[47%] w-8/12"
       />
     </div>
     <div
       id="cursor2"
-      class="hidden xl:block fixed w-[28px] h-[28px] border-none translate-x-[0%] translate-y-[0%] duration-300 ease-out bg-transparent z-50 pointer-events-none"
+      class="hidden xl:block fixed w-[20px] h-[20px] border-none translate-x-[0%] translate-y-[0%] duration-300 ease-out bg-transparent z-50 pointer-events-none"
     >
       <img
         src="/src/assets/icons/cursor2.svg"
@@ -77,7 +83,7 @@
         id="backbone"
       ></div>
       <nav
-        class="w-full top-0 left-0 z-20 relative transition duration-500 ease-in-out"
+        class="relative top-0 left-0 z-20 w-full transition duration-500 ease-in-out"
         id="navbar"
       >
         <div
@@ -118,7 +124,7 @@
             id="navbar-default"
           >
             <ul
-              class="flex flex-col mt-4 text-xl font-medium tracking-widest uppercase md:p-0 bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0"
+              class="flex flex-col mt-4 text-xl font-medium tracking-widest uppercase bg-transparent md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0"
             >
               <li>
                 <a
@@ -140,7 +146,7 @@
                 <a
                   href="/expertise.html"
                   class="block py-2 pl-3 pr-4 text-white md:border-0 md:p-0 font-normal cursor-none bg-[#00B0FF] md:bg-transparent active"
-                  >Expertise</a
+                  >Service</a
                 >
               </li>
               <li>
@@ -152,7 +158,7 @@
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/career.html"
                   class="block py-2 pl-3 pr-4 font-normal text-white rounded md:border-0 md:p-0 cursor-none"
                   >Career</a
                 >
@@ -200,11 +206,12 @@
               <p
                 class="font-inter font-normal text-[#CECECE] text-[20px] xl:text-[22px] 2xl:text-[24px] text-left opacity-[0.5]"
               >
-                At our branding agency, our utmost priority is to
-                cater to your unique needs and aspirations. We take
-                pride in offering a diverse range of services that are
-                tailored specifically to your brand's vision and
-                objectives.
+                At our branding agency, we place your unique needs and aspirations 
+                at the forefront of our services. With pride, we offer comprehensive 
+                solutions designed specifically to align with your brand's vision 
+                and objectives. Our dedicated team of experts is committed to 
+                providing you with understanding, ensuring that your brand receives 
+                the utmost care and attention it deserves.
               </p>
             </div>
           </div>
@@ -280,7 +287,7 @@
                 class="grid items-start w-full grid-cols-1 gap-10 xl:grid-cols-3"
               >
                 <div
-                  class="order-first relative w-full xl:order-last"
+                  class="relative order-first w-full xl:order-last"
                 >
                   <img
                     src="./src/assets/images/digital-marketing.jpg"
@@ -636,34 +643,35 @@
 
     <!-- Sticky contact us -->
     <div
-      class="w-[200px] h-14 fixed bottom-[45%] translate-y-[-50%] right-[-72px] bg-[#00B0FF] py-5 rotate-[-90deg] flex items-center"
+      class="max-md:h-4 max-md:right-[-80px] max-md:w-[175px] w-[200px] h-14 fixed bottom-[45%] translate-y-[-50%] right-[-72px] bg-[#00B0FF] py-5 rotate-[-90deg] flex items-center"
     >
-      <div class="relative overflow-hidden flex items-start">
-        <div
+      <div class="relative flex items-start overflow-hidden">
+        <a href="/about-you.html">
+          <div
           class="z-0 animate-marquee whitespace-nowrap flex gap-[36px]"
         >
           <p
-            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw] tracking-wider"
           >
             Contact Us
           </p>
           <p
-            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw] tracking-wider"
           >
             Contact Us
           </p>
           <p
-            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw] tracking-wider"
           >
             Contact Us
           </p>
           <p
-            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw] tracking-wider"
           >
             Contact Us
           </p>
           <p
-            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw] tracking-wider"
           >
             Contact Us
           </p>
@@ -672,31 +680,32 @@
           class="absolute top-0 z-0 animate-marquee2 whitespace-nowrap overflow-hidden flex gap-[36px]"
         >
           <p
-            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw] tracking-wider"
           >
             Contact Us
           </p>
           <p
-            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw] tracking-wider"
           >
             Contact Us
           </p>
           <p
-            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw] tracking-wider"
           >
             Contact Us
           </p>
           <p
-            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw] tracking-wider"
           >
             Contact Us
           </p>
           <p
-            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw]"
+            class="uppercase font-inter font-bold text-white text-lg xl:text-[1.5vw] tracking-wider"
           >
             Contact Us
           </p>
         </div>
+        </a>
       </div>
     </div>
 
@@ -721,7 +730,7 @@
           <h4
             class="text-lg font-medium text-white font-inter xl:text-xl"
           >
-            +62 812 3456789
+            <span><i class="fa-brands fa-whatsapp"></i></span> +62 812 3456789
           </h4>
         </div>
         <div
