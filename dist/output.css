@@ -2823,6 +2823,10 @@ input:checked + .toggle-bg {
   opacity: 1;
 }
 
+.opacity-\[0\.7\] {
+  opacity: 0.7;
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -4120,6 +4124,14 @@ button:focus {
 
   .\32xl\:max-w-\[1440px\] {
     max-width: 1440px;
+  }
+
+  .\32xl\:max-w-\[1200px\] {
+    max-width: 1200px;
+  }
+
+  .\32xl\:max-w-\[900px\] {
+    max-width: 900px;
   }
 
   .\32xl\:gap-32 {
