@@ -1,17 +1,27 @@
 section {
     /* height: calc(max(100vh, 400px)); */
-    font-family: "Plus Jakarta Sans", sans-serif;
+    /* font-family: "Plus Jakarta Sans", sans-serif; */
 }
 
 .summary {
-    padding: 30px 50px;
+    /* padding: 30px 50px; */
     box-shadow: 0 0 0 1px #f2f2f2;
 }
 
 .main-article p {
     margin-bottom: 20px;
     color: #777;
-    font-size: 1.125em;
+    font-size: 32px;
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 420px) {
+    .main-article p {
+        margin-bottom: 20px;
+        color: #777;
+        font-size: 20px;
+        line-height: 1.8;
+    }
 }
 
 .main-article blockquote::before {
@@ -83,6 +93,6 @@ section {
 
 @media screen and (max-width: 425px) {
     body {
-        padding: 25px;
+        padding: 0px;
    }
 }
