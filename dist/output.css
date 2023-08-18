@@ -1457,28 +1457,12 @@ input:checked + .toggle-bg {
   margin-top: 50px;
 }
 
-.mt-\[60px\] {
-  margin-top: 60px;
-}
-
-.mt-\[2px\] {
-  margin-top: 2px;
-}
-
 .mt-\[56px\] {
   margin-top: 56px;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mt-28 {
-  margin-top: 7rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
+.mt-\[60px\] {
+  margin-top: 60px;
 }
 
 .line-clamp-3 {
@@ -1678,10 +1662,6 @@ input:checked + .toggle-bg {
 
 .w-\[100\%\] {
   width: 100%;
-}
-
-.w-\[1000px\] {
-  width: 1000px;
 }
 
 .w-\[100px\] {
@@ -2415,10 +2395,6 @@ input:checked + .toggle-bg {
   background-repeat: no-repeat;
 }
 
-.fill-\[\#242424\] {
-  fill: #242424;
-}
-
 .fill-white {
   fill: #ffffff;
 }
@@ -2469,10 +2445,6 @@ input:checked + .toggle-bg {
   padding: 15px;
 }
 
-.p-\[50px\] {
-  padding: 50px;
-}
-
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -2486,6 +2458,11 @@ input:checked + .toggle-bg {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-5 {
@@ -2543,24 +2520,9 @@ input:checked + .toggle-bg {
   padding-bottom: 1.75rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .pb-1 {
@@ -3406,16 +3368,8 @@ button:focus {
     height: 1rem;
   }
 
-  .max-md\:w-11\/12 {
-    width: 91.666667%;
-  }
-
   .max-md\:w-\[175px\] {
     width: 175px;
-  }
-
-  .max-md\:w-9\/12 {
-    width: 75%;
   }
 
   .max-md\:flex-col {
@@ -3426,20 +3380,12 @@ button:focus {
     word-break: break-all;
   }
 
-  .max-md\:p-0 {
-    padding: 0px;
-  }
-
   .max-md\:p-4 {
     padding: 1rem;
   }
 
   .max-md\:pb-6 {
     padding-bottom: 1.5rem;
-  }
-
-  .max-md\:pb-8 {
-    padding-bottom: 2rem;
   }
 
   .max-md\:text-left {
@@ -3681,10 +3627,6 @@ button:focus {
     max-width: 900px;
   }
 
-  .lg\:max-w-\[768px\] {
-    max-width: 768px;
-  }
-
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -3815,6 +3757,10 @@ button:focus {
     margin-top: 0px;
   }
 
+  .xl\:mt-40 {
+    margin-top: 10rem;
+  }
+
   .xl\:mt-5 {
     margin-top: 1.25rem;
   }
@@ -3825,10 +3771,6 @@ button:focus {
 
   .xl\:mt-\[-72px\] {
     margin-top: -72px;
-  }
-
-  .xl\:mt-40 {
-    margin-top: 10rem;
   }
 
   .xl\:block {
@@ -4125,13 +4067,13 @@ button:focus {
     font-size: 96px;
   }
 
-  .xl\:text-xl {
-    font-size: 1.25rem;
+  .xl\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
-  .xl\:text-lg {
-    font-size: 1.125rem;
+  .xl\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
@@ -4297,10 +4239,6 @@ button:focus {
     max-width: 900px;
   }
 
-  .\32xl\:max-w-\[1080px\] {
-    max-width: 1080px;
-  }
-
   .\32xl\:gap-32 {
     gap: 8rem;
   }
@@ -4327,6 +4265,11 @@ button:focus {
   .\32xl\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .\32xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .\32xl\:text-\[102px\] {
@@ -4360,11 +4303,6 @@ button:focus {
   .\32xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .\32xl\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .\32xl\:leading-\[2\] {
