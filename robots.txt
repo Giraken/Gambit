@@ -1,0 +1,11 @@
+User-agent: Googlebot
+allow: /
+User-agent: googlebot-image
+Disallow: /
+User-agent: googlebot-mobile
+Disallow: /
+User-agent: MSNBot
+Disallow: /
+User-agent: *
+Disallow: /
+Sitemap: https://gambitrojo.com/sitemap.xml
